@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+    /* this code is wirtten by rakesh -- -code started  */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif; 
+            color: #44475b;rm 
+            /* color: red; */
+
+        }
+        #our_products_cont{
+            width: 90vw;
+            margin: 0 auto;
+            
+
+        }
+        #ourProducts{
+            background-color: #ecedef;
+            width: 100px;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+
+            
+            
+            
+        }
+        #ourProducts p {
+            color: #44475b;
+            margin: 0px;
+        }
+        #our_product_heading h2{
+            font-size: 36px;
+            margin-bottom: 70px;
+            font-size: 500;
+
+        }
+        #our_products_tabs{
+            display: grid;
+   
+            grid-template-columns: repeat(5, auto);
+
+
+        }
+        #our_products_tabs>div{
+            align-items: center;
+            min-width: 200px;
+            margin-left: 30px;
+            
+            
+        }
+        .our_products_flex{
+            display: flex;
+            filter: grayscale(100%);
+
+         
+        }
+        .our_products_flex:hover{
+            filter: grayscale(0%);
+            
+        }
+        .bar{
+            width: 100%;
+            height: 3px;
+            border-radius: 1.5px;
+            background-color: #00d09c;
+            margin-top: 15px;
+            
+        }
+
+        #our_products_tabs>div:hover{
+            cursor: pointer;
+            
+        }
+        .our_product_tabs_img{
+            width: 40px;
+            height: 40px;
+            /* background-color: black; */
+            /* border-radius: 20px; */
+        }
+        .our_product_tabs_img>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            
+        }
+        
+    
+        .our_products_tabs_text{
+            margin-left: 10px;
+            padding-top: auto;
+            padding-bottom: auto;
+            clear: both;
+            
+            
+        }
+        .our_products_tabs_text h6{
+            font-size: 22px;
+            margin: 0px;
+            margin-top: 9px;
+            font-weight: 500;
+        
+        }
+        /* #our_products_tabs .bar{
+           
+            width: 100%;
+            height: 5px;
+
+        } */
+        #our_product_display {
+            display: flex;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 200px;
+
+        }
+        .out_product_display_image{
+            width: 562px;
+            height: 355px;
+        }
+        .out_product_display_image img{
+            width: 562px;
+            height: 355px;
+        }
+        .our_product_display_info {
+            width: 500px;
+            margin-left: 90px;
+            padding-top: 20px;
+        }
+        .our_product_display_info_heading{
+            display: flex;
+        }
+        .our_product_display_info_heading h1{
+            font-size: 80px;
+           margin-top: 0px;
+           margin-bottom: 20px;
+        }
+        .our_product_display_info_heading h2{
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+        .our_product_display_button {
+            width: 205px;
+            height: 45px;
+
+        }
+        .our_product_display_button button{
+            width: 100%;
+            height: 100%;
+            background-color: #00d09c;
+            color: white;
+            border: #00d09c;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-weight: 800;
+            
+            
+        }
+        .our_product_display_button button:hover{
+            cursor: pointer;
+            opacity: 0.9;
+            
+        }
+
+
+/*  this code is wiriten by rakesh ---- code ended  */
+
+
+
+       
+
+
+    
+    </style>
+</head>
+<body>
+
+    <!-- ----this code is wirten by  rakesh ---- code start -->
+    <div id="our_products_cont">
+        <div id="ourProducts">
+            <p>OUR PRODUCTS</p>
+        </div>
+        <div id="our_product_heading">
+            <h2>Your money. Your choice.</h2>
+
+        </div>
+        <div id="our_products_tabs">
+            <div onclick= 'display("s")'>
+                <div class="our_products_flex" id="flex_1">
+                    <div class="our_product_tabs_img">
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stock_product.d051478a.svg">
+    
+                    </div>
+                    <div class="our_products_tabs_text">
+                        <h6>Stocks</h6>
+                        
+    
+                    </div>
+
+                </div>
+                
+                <div class="bar" id="bar1"></div>
+               
+                
+            </div>
+            <div onclick="display('m')" >
+                <div class="our_products_flex" id="flex_2">
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/mf_product.ac8adcdd.svg">
+
+                </div>
+                <div class="our_products_tabs_text" >
+                    <h6>Mutual Funds</h6>
+
+                </div>
+            </div>
+            <div id="bar2"></div>
+                
+            </div>
+            <div onclick="display('g')">
+                <div class="our_products_flex" id="flex_3">
+
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/gold_product.14cb26a3.svg">
+                </div>
+                <div class="our_products_tabs_text">
+                    <h6>Gold</h6>
+
+                </div>
+               </div>
+               <div id="bar3"></div>
+                
+            </div>
+            <div onclick="display('u')">
+                <div class="our_products_flex" id="flex_4">
+
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/us_product.bd76aa25.svg">
+                </div>
+                <div class="our_products_tabs_text">
+                    <h6>US Stocks</h6>
+
+                </div>
+               </div>
+               <div id="bar4"></div>
+                
+            </div>
+            <div onclick="display('f')">
+                <div class="our_products_flex" id="flex_5">
+
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/fd_product.72e6a2ed.svg">
+                </div>
+                <div class="our_products_tabs_text">
+                    <h6>FDs</h6>
+                    
+
+                </div>
+               
+                </div>
+                <div id="bar5"></div>
+            </div>
+           
+
+        </div>
+        <div id="our_product_display">
+            <div class="out_product_display_image">
+                <img id= 'product_imgae'src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stocks.74948e96.png" alt="our-product-image">
+
+            </div>
+            <div class="our_product_display_info">
+                <div class = 'our_product_display_info_heading'>
+                    <h1 id="info_head">Zero</h1><h2 id="info_head2">account charges</h2>
+
+                </div>
+                
+                <p id="info_para">You don't have to pay single rupee for opening a stocks acount or account maintenace.</p>
+                <div class="our_product_display_button">
+                    <button>Create Account For Free</button>
+    
+                </div>
+            </div>
+           
+
+        </div>
+
+    </div>
+
+    <!-- this code is wirtten by rakesh ---- code ended -->
+ 
+</body>
+
+
+</html>
+<script>
+    function display(a){
+       if(a == 'm'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/mf.6c2cde91.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = '0%'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'commission'
+            var p = document.getElementById('info_para');
+                p.innerText = 'Select from 5000+ direct mutal funds and get higher return than regular funds.'
+            var bar = document.getElementById('bar2');
+                bar.setAttribute('class','bar')
+            var bars = document.getElementById('bar1');
+                bars.removeAttribute('class')
+            var barg = document.getElementById('bar3')
+                barg.removeAttribute('class');
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+
+       }
+       if(a == 's'){
+            
+        var flex = document.querySelectorAll('flex_');
+            flex.style
+        // for(let i = 0; i<flex.length ; i++){
+        //     console.log(flex[i]);
+        // }
+
+            
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stocks.74948e96.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = 'Zero'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'account charges'
+            var p = document.getElementById('info_para');
+                p.innerText = "You don't have to pay single rupee for opening a stocks acount or account maintenace.";
+        
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.setAttribute('class','bar')
+            var barg = document.getElementById('bar3')
+                barg.removeAttribute('class');
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+       }
+       
+       if(a == 'g'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/gold.4b4ed1a9.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = '99.9%'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'purity'
+            var p = document.getElementById('info_para');
+                p.innerText = "Invest in digital gold as low as ₹10 without any extra commission or making charges.";
+        
+
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.removeAttribute('class');
+
+            var barg = document.getElementById('bar3')
+            barg.setAttribute('class','bar')
+
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+       }
+      
+       if(a == 'u'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/us.fc57ceac.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = 'Free'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'account opening'
+            var p = document.getElementById('info_para');
+                p.innerText = "Invest in Apple Google Netflix and many more US companies that you live without any brokerage free.";
+        
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.removeAttribute('class');
+
+            var barg = document.getElementById('bar3')
+            barg.removeAttribute('class');
+
+                var baru = document.getElementById('bar4')
+                baru.setAttribute('class','bar')
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+
+       }
+       if(a == 'f'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/fd.16c65ccc.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = '6.7%'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'interest rate'
+            var p = document.getElementById('info_para');
+                p.innerText = "Open fixed deposits in any bank with higher interest rates without opening a bank account.";
+        
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.removeAttribute('class');
+
+            var barg = document.getElementById('bar3')
+            barg.removeAttribute('class');
+
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.setAttribute('class','bar');
+       }
+    }
+</script>
