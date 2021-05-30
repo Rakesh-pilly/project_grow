@@ -239,7 +239,50 @@
 
 /* this code is coded by rakesh ---- in the press --- code start */
 
+    #in_the_press{
+        margin-bottom: 30px;
+    }
+    #in_the_press>div:nth-child(1){
+        width: 90vw;
+        margin: 0 auto;
+    }
 
+        #in_the_press>div:nth-child(1) h1{
+            text-align: center;
+            font-size: 36px;
+            width: 100%;
+            margin-bottom: 0px;
+            border-bottom: 1px solid rgb(232, 228, 228); 
+            line-height: 0.1em;
+            margin: 10px 0 20px; 
+            
+
+        }
+        #in_the_press>div:nth-child(1) h1 span{
+            background:#fff; 
+            padding:0 10px; 
+        }
+        #in_the_press_img{
+            /* background-color: lightblue; */
+            width: 80vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4,166px);
+            justify-content: space-between;
+        }
+        #in_the_press_img>div{
+            margin-top: 20px;
+           height: 88px; 
+           filter: grayscale(100%);
+        }
+        #in_the_press_img>div img{
+            width: 100%;
+            height: 100%;
+        }
+        #in_the_press_img>div:hover{
+            filter: grayscale(0%);
+        }
+        
 
 
        
@@ -402,8 +445,27 @@
 
     <!-- this code is coded by rakesh -- In the Press -->
 
-    <div id="In the Press">
-        <h1>In The Press</h1>
+    <div id="in_the_press">
+        <div>
+            <h1><span>In The Press</span></h1>
+        </div>
+        
+        <div id="in_the_press_img">
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/ys.9166bd37.svg">
+
+            </div>
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/live.7edf8d7a.svg">
+            </div>
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/business.dc402a84.svg">
+            </div>
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/enter.09e9d78c.svg">
+            </div>
+
+        </div>
 
     </div>
  
