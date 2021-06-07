@@ -53,16 +53,23 @@
         #our_products_tabs>div{
             align-items: center;
             min-width: 200px;
-            margin-left: 30px;
+            /* margin-left: 30px; */
             
             
         }
+       
         .our_products_flex{
             display: flex;
             filter: grayscale(100%);
+            justify-content: center;
 
          
         }
+        /* #flex_1{
+            justify-content: start !important
+        } */
+
+        
         .our_products_flex:hover{
             filter: grayscale(0%);
             
@@ -239,9 +246,9 @@
 
 /* this code is coded by rakesh ---- in the press --- code start */
 
-    #in_the_press{
+    /* #in_the_press{
         margin-bottom: 30px;
-    }
+    } */
     #in_the_press>div:nth-child(1){
         width: 90vw;
         margin: 0 auto;
@@ -282,7 +289,146 @@
         #in_the_press_img>div:hover{
             filter: grayscale(0%);
         }
+    /* this code is end for In the press */
+
+    /* this code is for testimonial box */
+    #testimonials_box{
+    
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-color: #f6f6f7;
+        margin: 0 auto;
+
+    }
+    #testimonials_box>div:nth-child(1){
+        width: 90%;
+        margin: 0 auto;
         
+        
+
+    }
+    #testimonials_box>div:nth-child(1) h2{
+        font-size: 36px;
+        font-weight: 600;
+        margin: 0;
+    }
+    #testimonials_box>div:nth-child(2){
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        
+    }
+    #testimonials_box>div:nth-child(2) p{
+        font-size: 18px;
+        color:#7c7e8c ;
+        margin: 0;
+        
+    }
+    #testimonials_box>div:nth-child(2) a{
+         color: #00d09c;
+            
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 600;
+
+    }
+    #testimonials_box u{
+            text-decoration: none;
+            color: #00d09c;
+            font-size: 16px;
+            font-weight: 600;
+
+    }
+
+    #testimonials_box u:hover{
+        text-decoration: underline;
+    }
+    
+    #testimonials_boxs{
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        grid-gap: 20px;
+        margin-top: 40px;
+    }
+    #testimonials_boxs>div{
+        width: 290px;
+        padding: 25px 35px;
+        background-color: white;
+        border-radius:10px;
+        
+        
+    }
+    #testimonials_boxs>div:hover{
+        box-shadow:
+  0 10px 10px rgba(0, 0, 0, 0.034),
+  0 10px 10px rgba(0, 0, 0, 0.034),
+  0 10px 10px rgba(0, 0, 0, 0.034),
+  0 10px 10px rgba(0, 0, 0, 0.034),
+  0 10px 10px rgba(0, 0, 0, 0.034),
+  0 10px 10px rgba(0, 0, 0, 0.034)
+;
+        cursor: pointer;
+    }
+    .testimonials_img_head{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 86px 155px;
+        
+
+    }
+    .testimonials_img ,.testimonials_img img {
+        width: 56px;
+        height: 56px;
+        border-radius: 28px;
+    }
+    .testimonials_para{
+        margin-top: 20px;
+
+    }
+    .testimonials_para p{
+        font-size: 18px;
+        line-height: 36px;
+        
+    }
+    .testimonial_names{
+        margin-top: 20px;
+
+    }
+    .testimonial_names h4{
+        font-size: 17px;
+    }
+    .testimonials_stars{
+        display: flex;
+        padding-top: 4px;
+
+    }
+    
+    .testimonials_stars span{
+        
+        font-size: 27px;;
+       color: #ffb61b;
+        margin-right: 10px;
+        
+        
+        
+    }
+    
+    
+
+
+
+
+
+
+
+
+
 
 
        
@@ -468,6 +614,111 @@
         </div>
 
     </div>
+    <div id="testimonials_box">
+        <div>
+            <h2>Creating proud investors.</h2>
+        </div>
+            <div>
+                <div><p>You can feel the pride of being a Groww invetor in theit words</p></div>
+                <div><a href=""><u>View More</u> → </a>
+                </div>
+            </div>
+
+            <div id="testimonials_boxs">
+                <div>
+                    <div class="testimonials_img_head">
+                        <div class='testimonials_img'>
+                            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/ankitImg.863e0afa.png">
+        
+                        </div>
+                        <div class="testimonials_stars">
+                         
+                                <span>&#9733;</span>
+                                <span> &#9733;</span>
+                                <span> &#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                     
+                        </div>
+                    </div>
+                        <div class="testimonials_para">
+                            <p>"Groww.in was the platform where I first got on board
+                                to MF and I would have to say, even for a beginner like me it mde things quite
+                            easier to explore and invest. </p>
+                        </div>
+                        <div class="testimonial_names">
+                        <h4>Ankit Puri</h4>
+                        </div>
+                        <div>
+        
+                            <p>Product Specialist, Google</p>
+                        </div>
+                    
+        
+                </div>
+                <div>
+                    <div class="testimonials_img_head">
+                        <div class='testimonials_img'>
+                            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/amitImg.ebb056f0.jpeg">
+        
+                        </div>
+                        <div class="testimonials_stars">
+                                 <span>&#9733;</span>
+                                <span> &#9733;</span>
+                                <span> &#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                        </div>
+                    </div>
+                        <div class="testimonials_para">
+                            <p>"Actually, the UI is exremely simple and easy for users to adapt, that's 
+                                what makes it unique. Many of my referrals have aslo joined and enjoying GROWW. </p>
+                        </div>
+                        <div class="testimonial_names">
+                        <h4>Amit Sharma</h4>
+                        </div>
+                        <div>
+        
+                            <p>solutions Architect, Amazon Web Services</p>
+                        </div>
+
+                </div>
+                <div>
+                    <div class="testimonials_img_head">
+                        <div class='testimonials_img'>
+                            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/roopaImg.5575c84f.jpg">
+        
+                        </div>
+                        <div class="testimonials_stars">
+                                <span>&#9733;</span>
+                                <span> &#9733;</span>
+                                <span> &#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                        </div>
+                    </div>
+                        <div class="testimonials_para">
+                            <p>"if you  are one of those who would like to take control of how you save, use Groww. it's ridiculously easy portal.
+                                It just took me 5 mins to set up and invest. </p>
+                        </div>
+                        <div class="testimonial_names">
+                        <h4>Roopa Ambejar</h4>
+                        </div>
+                        <div>
+        
+                            <p>Product Specialist, Google</p>
+                        </div>
+
+
+                </div>
+        
+        
+        
+            </div>
+        
+
+    </div>
+   
  
 </body>
 
