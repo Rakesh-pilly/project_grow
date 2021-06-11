@@ -1,0 +1,196 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    --background: #fff;
+    --color-font: rgb(68,68,68);
+    --card-bg: rgb(246,246,247);
+    background-color: var(--background);
+}
+
+body.dark{
+    --background:rgb(0, 0, 0);
+    --color-font: #fff;
+    --card-bg:rgb(29,29,29);
+}
+
+#icon-headers {
+    display: flex;
+    max-width: 66.6% ;
+}
+
+#icon-headers p{
+    margin-right: 50%;
+    margin-left: 12.5%;
+    font-size: 1.4rem;
+    font-weight: 690;
+    color: var(--color-font)
+}
+
+#icon-headers a{
+    color: rgb(38,215,171);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    margin-left: -48px;
+    text-decoration: none;
+}
+
+#icon-headers:hover a{
+    text-decoration: underline;
+}
+
+.mutual-funds-in {
+    width: 83%;
+    margin: auto;
+    margin-top: 7px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 2fr 1fr;
+    /* display: flex; */
+    font-size: 0.9rem;
+    color: var(--color-font);
+}
+
+.mutual-funds-gridL {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5%;
+}
+
+.mutual-funds-icon-cards{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: -20px;
+    border: solid 2px rgba(212, 212, 212, 0.246) ;
+    border-radius:5%;
+    margin-bottom: 100px;
+    transition: 0.1s linear;
+}
+
+.mutual-funds-icon-cards > img{
+    width: 30px;
+    border: 1px solid rgba(192, 192, 192, 0.418);  
+    border-radius: 20%;
+}
+
+.mutual-funds-icon-cards p{
+    max-width: 90%;
+    font-weight: 500;
+}
+
+.mutual-funds-icon-cards p + p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.mutual-funds-icon-cards p + p span{
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.mutual-funds-icon-cards:hover{
+    transform: scale(1.01);
+}
+
+.mutual-funds-gridR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(192, 192, 192, 0.418);  
+    margin-top: -50px;
+    border-radius: 2%;
+    text-align: center;
+    color: var(--color-font)
+}
+
+.mutual-funds-gridR > img {
+    width:120px;
+    margin-top:-40px;
+}
+
+.mutual-funds-gridR p{
+    font-size: 1.2rem;
+}
+
+.mutual-funds-gridR p + p{
+    font-size: 0.9rem;
+    margin: 0px 10%;
+    line-height: 1.2rem;
+    color: rgb(165, 165, 165);
+}
+
+.mutual-funds-gridR a {
+    text-decoration: none;
+    padding: 14px 70px;
+    margin:20px 0px;
+    margin-bottom: -60px;
+    border-radius: 3px;
+    background-color: rgb(38,215,171);
+    color: var(--background);
+    font-weight: 500;
+}
+
+.mutual-funds-gridR a:hover{
+    opacity: 0.8;
+}
+
+.icon-header-below {
+    margin-top: -20px;
+}
+
+#mf-below-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+#mf-below-icons img{
+   width:50px;
+   margin-bottom:10px;
+}
+
+#mf-sip-card {
+    margin-top: -40px;
+}
+
+#mf-sip-card img {
+    margin-top: 20px
+}
+
+#mf-sip-card {
+    padding-bottom: 80px;
+}
+
+#mf-sip-card a {
+    padding: 14px 115px;
+}
+
+.m-f-nutshell {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-color: var(--card-bg);
+    width: 100%;
+    margin-top: -150px;
+    margin-left: 15px;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.m-f-nutshell img {
+    width:60px;
+}
+
+.m-f-nutshell div:hover{
+     color: rgb(38,215,171);
+}
+
+#footer-spacer-m-f {
+    margin-top: 50px;
+}
+

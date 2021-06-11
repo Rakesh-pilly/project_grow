@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="MF-styleSheet.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title> Mutual Funds </title>
+</head>
+<body class = "">
+
+    <div id='icon-headers'>
+        <p> Popular Funds </p>
+        <a href="MF_all.html"> SEE ALL MUTUAL FUNDS </a>
+    </div>
+
+    <div class="mutual-funds-in">
+        <div class="mutual-funds-gridL">
+             <!--------------------------------- Small cards with icons--------------------------------- -->
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/icici icon.svg" >
+                <p> ICICI Prudential Technology Direc...</p>
+                <p> 31.8% <span>(3Y)</span></p>
+            </div>
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/axis icon.svg" alt="">
+                <p> Axis Small Cap Fund Direct Growth </p>
+                <p> 24.6% <span>(3Y)</span></p>
+            </div>
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/parag icon.svg" alt="">
+                <p> Parag Parikh Flexi Cap Fund Direct... </p>
+                <p> 21.8% <span>(3Y)</span></p>
+            </div>
+
+            <div class="mutual-funds-icon-cards">
+                <img src="images/tata icon.svg" alt="">
+                <p> Tata Digital India Fund Direct Growth </p>
+                <p> 29.5% <span>(3Y)</span></p>
+            </div>
+        </div>
+        <div class="mutual-funds-gridR">
+            <img src="images/mutualFunds.svg" id = "MF-img">
+            <p> New to Mutual Funds? </p>
+            <p> Start exploring mutual funds to begin your investment journey </p>
+            <a href="MF_all.html"> EXPLORE MUTUAL FUNDS </a>
+        </div>
+    </div>
+    <div id ="icon-headers" class = "icon-header-below">
+        <p> Handpicked Collections </p>
+    </div>
+   <div class="mutual-funds-in">
+        <div class="mutual-funds-gridL" id = "mf-below-icons">
+            <div>
+                <img src= "images/mf-icon-1.svg" id= "mf-icon-1">                <p> HIGH RETURN </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-2.svg" id= "mf-icon-2">
+                <p> TAX SAVING </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-3.svg" id= "mf-icon-3">
+                <p> BETTER THAN FD </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-4.svg" id= "mf-icon-4">
+                <p> TOP COMPANIES </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-5.svg" id= "mf-icon-5">
+                <p> SIP WITH ₹500 </p>
+            </div>
+            <div>
+                <img src="images/mf-icon-6.svg" id= "mf-icon-6">
+                <p> SECTOR BETS </p>
+            </div>
+        </div>
+
+        <div class="mutual-funds-gridR" id = "mf-sip-card">
+            <img src="images/sip-icon.svg" id = "SIPimg">
+            <p> Have a SIP! </p>
+            <p> Start and manage monthly investments on Groww, simple and fast </p>
+            <a href="MF_all.html"> START A SIP </a>
+        </div>
+        <div class="m-f-nutshell">
+            <div>
+                <img src="images/mf-nutshell-1.svg" id = "nutshell-1-image"> 
+                <p> IMPORTANT FUNDS </p>
+            </div>
+            <div>
+                <img src="images/mf-nutshell-2.svg" id = "nutshell-2-image">
+                <p> SMART-SAVE </p>
+            </div>
+            <div> 
+                <img src="images/mf-nutshell-3.svg" id= "nutshell-3-image">
+                <p> SWITCH TO DIRECT </p>
+            </div>
+            <div>
+                <img src="images/mf-nutshell-4.svg" id= "nutshell-4-image">
+                <p> LIVE INFO </p>
+            </div>
+            <div>
+                <img src="images/mf-nutshell-5.svg" id= "nutshell-5-image">
+                <p> COMPARE FUNDS </p>
+            </div>
+        </div>
+   </div>
+   <div id = "footer-spacer-m-f"></div>
+
+
+    
+</body>
+</html>
+
+<script>
+
+    var nutshell = document.querySelector('.m-f-nutshell');
+
+    var img1 = document.querySelector('#nutshell-1-image')
+
+    var body = document.querySelector('body');
+
+    var MFimg = document.querySelector('#MF-img') 
+    let icon1 = document.querySelector('#mf-icon-1')
+    let icon2 = document.querySelector('#mf-icon-2')
+    let icon3 = document.querySelector('#mf-icon-3')
+    let icon4 = document.querySelector('#mf-icon-4')
+    let icon5 = document.querySelector('#mf-icon-5')
+    let icon6 = document.querySelector('#mf-icon-6')
+
+    let nticon1 = document.querySelector('#nutshell-1-image');
+    let nticon2 = document.querySelector('#nutshell-2-image');
+    let nticon3 = document.querySelector('#nutshell-3-image');
+    let nticon4 = document.querySelector('#nutshell-4-image');
+    let nticon5 = document.querySelector('#nutshell-5-image');
+
+    var SIPimg = document.querySelector('#SIPimg')
+
+    if(body.classList == "dark"){ 
+        MFimg.src = "images/MutualFunds-drk.svg";
+        SIPimg.src = "images/SIP-drk.svg";
+        icon1.src =  "images/mf-icon-1-drk.svg";
+        icon2.src = "images/mf-icon-2-drk.svg";
+        icon3.src = "images/mf-icon-3-drk.svg";
+        icon4.src = "images/mf-icon-4-drk.svg";
+        icon5.src = "images/mf-icon-5-drk.svg";
+        icon6.src = "images/mf-icon-6-drk.svg";
+ 
+        nticon1.src = "images/mf-nutshell-1-drk.svg";
+        nticon2.src = "images/mf-nutshell-2-drk.svg";
+        nticon3.src = "images/mf-nutshell-3-drk.svg";
+        nticon4.src = "images/mf-nutshell-4-drk.svg";
+        nticon5.src = "images/mf-nutshell-5-drk.svg";
+
+    }
+</script>
