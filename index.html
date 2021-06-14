@@ -179,6 +179,7 @@
             width: 90vw;
             margin: 0px auto;
 
+
         }
         #keep_learning_head{
             text-align: center;
@@ -284,8 +285,52 @@
             filter: grayscale(0%);
         }
         
+        /* for particles js */
+
+        #particle-cont{
+      width:100%;
+      background-color: rgb(83,103,255);
+      margin:auto;
+      margin-bottom: 950px;
+
+      
+      
+    }
+    #particles-js{
+      width: 99%;
+      background-color: rgb(83,103,255);
+      display:grid;
+      background-image: url(images/shield-groww.0d0cc15e.png);
+      position: absolute;
+    }
 
 
+   
+    
+     #img3d {
+      position: absolute;
+       transform: (40%, -50%); 
+      margin-left: 8%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 17%;
+    } 
+    #img3d div h1{
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: -35px;
+    }
+
+    #img3d div p{
+      font-size: 1.2rem;
+      color: white;
+      margin-top:10%;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+
+ 
        
 
 
@@ -454,6 +499,26 @@
 
     </div>
 
+    <!-- By Bharadwaj  -->
+
+                                 <!-- Js particles (image) -->
+                            
+    <div id="particle-cont">       
+        <div id='particles-js'></div>
+        <div id="img3d">
+            <div>
+                <h1> Trusted by</h1>
+                <h1>10 Million+ users</h1>
+                <p>we've got the ISO 27001:2013 certification to show for it! Our cuting- edge technology ensures that all
+                    your
+                    information remains fully encrypted and secure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
     <!-- this code is wirtten by rakesh ---- code ended -->
 
 
@@ -523,6 +588,9 @@
 
 
 </html>
+
+<script src = "particles.js"></script>
+<script src = "app.js"></script>
 <script>
     function display(a){
        if(a == 'm'){
