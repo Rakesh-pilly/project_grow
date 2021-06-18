@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+    /* this code is wirtten by rakesh -- -code started  */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif; 
+            color: #44475b;
+            
+
+        }
+
+
+        /* nav bar code strats   */
+        :root{
+    --lightBackground : #fff;
+    --lightColor : #44475b;
+    --hover:rgb(239, 237, 237);
+    --border: rgba(164, 163, 163, 0.3);
+    
+
+   
+}
+
+.blur{
+    filter: blur(1px)
+}
+.unblur {
+    filter: blur(0);
+}
+
+#nav_bar{
+
+height: 83px;
+display:flex;
+width: 85%;
+margin: 0 auto;
+
+justify-content: space-between;
+align-items: center;
+margin-top: -15px;
+
+margin-bottom: 90px ;
+ animation-delay: 0.4s;
+transition:ease-in ;
+
+
+}
+#nav_bar_logo, #nav_bar_logo img{
+width:148px;
+height:40px;
+
+
+}
+
+#nva_bar_search{
+
+width: 450px;
+border: 1px  solid var(--border);
+display:flex;
+height: 29px;
+padding: 3px;
+border-radius: 5px;
+box-shadow: 1px 1px 1px 1px var(--border);
+
+
+
+}
+#nva_bar_search input{
+border: 0px ;
+width: 420px;
+height: 27px;
+color: var(--lightColor);
+font-size: 16PX;
+background-color: var(--lightBackground);
+outline: var(--lightBackground);
+
+
+
+}
+::placeholder{
+color: var(--lightColor);
+}
+
+
+#nva_bar_search>div:nth-child(2), #nva_bar_search>div:nth-child(2) img {
+width: 20px;
+height: 20px;
+margin-top: 2px;
+}
+#nva_bar_search>div:nth-child(2):hover{
+cursor: pointer;
+}
+
+
+#btn{
+                text-align: center;
+                  font-size: 16px;
+                width: 190px;
+                height: 43px;
+                color: white;
+                background-color:#00d09c;
+                border:white;
+                border-radius: 5px;
+                float: right;
+                margin: auto;
+                
+ 
+                
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+#login_box{
+
+    width: 800px;
+    height: 450px;
+ 
+ 
+    position: fixed;
+    top: 50%;
+    
+    left: 50%; 
+    transform: translate(-50%, -50%) ;
+   
+     display:none;
+    z-index:1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(205, 205, 205, 0.5);
+    transition: all 2s ease-out;
+   
+
+    
+
+}
+#log_box_left{
+    width: 400px;
+    height: 450px;
+    background-image: url('https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/patternImg.0edf5760.svg')
+
+}
+#log_box_right{
+    width: 270px;
+    height: 390px;
+    background-color: #ffff;
+    padding: 30px 60px;
+  
+
+}
+
+
+#login_btn{
+    position: absolute;
+    right:0px;
+background-color: #fff;
+}
+#log_box_left> div{
+    margin-left: 60px;
+}
+#log_box_left> div:nth-child(1){
+    margin-top: 60px;
+
+}
+#log_box_left> div:nth-child(3){
+    position: absolute;
+    bottom: 30px;
+
+}
+#log_box_left p{
+    margin :2px;
+    
+
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+#log_box_heading{
+    font-size: 31px;
+    font-weight: 600;
+
+}
+#log_box_google{
+    display: flex;
+    justify-content:center;
+    box-shadow: 1px 1px 1px 1px rgba(205, 205, 205, 0.3);
+    
+
+}
+#log_box_google img{
+    width: 25px;
+    height: 25px;
+    margin-top: 13px;
+    margin-right: 10px;
+    
+}
+#log_box_google p{
+    font-weight: 600;
+}
+#or{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin: 40px auto;
+}
+
+.log_box_input input, #log_box_password input{
+    width: 100%;
+     height: 20px;
+    background-color: white;
+    border: 0px;
+    border-bottom: 1px solid #44475b;
+    font-size: 17px;
+
+
+}
+.log_box_input input:focus ,#log_box_password input:focus{
+    border: 0px;
+    outline: 0;
+    border-bottom: 3px solid #00d09c;
+    
+}
+.log_box_input input::placeholder ,#log_box_password input::placeholder{
+    color: #44475b;
+    font-size: 17px;
+}
+.log_box_button {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: #00d09c;
+    padding-top: 1px;
+    margin-top: 35px;
+    border-radius: 7px;
+    
+}
+
+.log_box_button_p{
+    color:white;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 17px;
+
+
+}
+.log_box_button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+#log_box_email{
+    display: block;
+}
+#log_box_pass{
+    display: none;
+}
+#log_box_pass_heading{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#log_box_password{
+    margin-top: 50px;
+   
+}
+#log_box_dis{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: -32px;
+    margin-top: 80px;
+    background-color: lightgrey;
+    border-radius: 2px;
+
+}
+#log_box_dis p{
+    font-size: 11px;
+    text-align: center;
+
+}
+
+
+    
+
+
+
+
+         /* this code for top nav bar writen by rakesh  end*/
+
+
+         #our_products_cont{
+            width: 85vw;
+            margin: 0 auto;
+            
+
+        }
+        #ourProducts{
+            background-color: #ecedef;
+            width: 100px;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+
+            
+            
+            
+        }
+        #ourProducts p {
+            color: #44475b;
+            margin: 0px;
+        }
+        #our_product_heading h2{
+            font-size: 36px;
+            margin-bottom: 70px;
+            font-size: 500;
+
+        }
+        #our_products_tabs{
+            display: grid;
+           
+            grid-template-columns: 150px repeat(4,auto);
+
+
+        }
+       
+        #our_products_tabs>div{
+            align-items: center;
+            min-width: 150px;
+            /* margin-left: 30px; */
+            
+            
+        }
+       
+        .our_products_flex{
+            display: flex;
+            filter: grayscale(100%);
+            justify-content: center;
+
+         
+        }
+        /* #flex_1{
+            justify-content: start !important
+        } */
+
+        
+        .our_products_flex:hover{
+            filter: grayscale(0%);
+            
+        }
+        .bar{
+            width: 100%;
+            height: 3px;
+            border-radius: 1.5px;
+            background-color: #00d09c;
+            margin-top: 15px;
+            
+        }
+
+        #our_products_tabs>div:hover{
+            cursor: pointer;
+            
+        }
+        .our_product_tabs_img{
+            width: 40px;
+            height: 40px;
+            /* background-color: black; */
+            /* border-radius: 20px; */
+        }
+        .our_product_tabs_img>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            
+        }
+        
+    
+        .our_products_tabs_text{
+            margin-left: 10px;
+            padding-top: auto;
+            padding-bottom: auto;
+            clear: both;
+            
+            
+        }
+        .our_products_tabs_text h6{
+            font-size: 22px;
+            margin: 0px;
+            margin-top: 9px;
+            font-weight: 500;
+        
+        }
+        /* #our_products_tabs .bar{
+           
+            width: 100%;
+            height: 5px;
+
+        } */
+        #our_product_display {
+            display: flex;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 200px;
+
+        }
+        .out_product_display_image{
+            width: 562px;
+            height: 355px;
+        }
+        .out_product_display_image img{
+            width: 562px;
+            height: 355px;
+        }
+        .our_product_display_info {
+            width: 500px;
+            margin-left: 90px;
+            padding-top: 20px;
+        }
+        .our_product_display_info_heading{
+            display: flex;
+        }
+        .our_product_display_info_heading h1{
+            font-size: 80px;
+           margin-top: 0px;
+           margin-bottom: 20px;
+        }
+        .our_product_display_info_heading h2{
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+        .our_product_display_button {
+            width: 205px;
+            height: 45px;
+
+        }
+        .our_product_display_button button{
+            width: 100%;
+            height: 100%;
+            background-color: #00d09c;
+            color: white;
+            border: #00d09c;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-weight: 800;
+            
+            
+        }
+        .our_product_display_button button:hover{
+            cursor: pointer;
+            opacity: 0.9;
+            
+        }
+
+/* this code is wiriten by rakesh -- keep learning. keep growing --- code start */
+        #keep_learning_cont{
+            width: 90vw;
+            margin: 0px auto;
+
+
+        }
+        #keep_learning_head{
+            text-align: center;
+            font-size: 36px;
+            font-weight:600;
+        }
+
+        #keep_learning_display{
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            justify-content: space-around;
+            
+
+        }
+        .keep_learning_img img{
+            
+            width: 350px;
+        }
+        .keep_learning_img:hover{
+            filter: brightness(93%);
+            cursor: pointer;
+        }
+        .keep_learnig_img_tex{
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+
+        }
+        #keep_learing_articles{
+            display: flex;
+            width: 150px;
+            margin: 70px auto;
+            
+
+        }
+        #keep_learing_articles a{
+            color: #00d09c;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        #keep_learing_articles u{
+            text-decoration: none;
+            color: #00d09c;
+            font-size: 16px;
+            font-weight: 600;
+
+
+
+        }
+
+        #keep_learing_articles u:hover{
+            text-decoration: underline;
+        }
+
+/* this code is coded by rakesh --- keep learnign --- code ended */
+
+/* this code is coded by rakesh ---- in the press --- code start */
+
+    #in_the_press{
+        margin-bottom: 30px;
+    }
+    #in_the_press>div:nth-child(1){
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+        #in_the_press>div:nth-child(1) h1{
+            text-align: center;
+            font-size: 36px;
+            width: 100%;
+            margin-bottom: 0px;
+            border-bottom: 1px solid rgb(232, 228, 228); 
+            line-height: 0.1em;
+            margin: 10px 0 20px; 
+            
+
+        }
+        #in_the_press>div:nth-child(1) h1 span{
+            background:#fff; 
+            padding:0 10px; 
+        }
+        #in_the_press_img{
+            /* background-color: lightblue; */
+            width: 80vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4,166px);
+            justify-content: space-between;
+        }
+        #in_the_press_img>div{
+            margin-top: 20px;
+           height: 88px; 
+           filter: grayscale(100%);
+        }
+        #in_the_press_img>div img{
+            width: 100%;
+            height: 100%;
+        }
+        #in_the_press_img>div:hover{
+            filter: grayscale(0%);
+        }
+        
+        /* for particles js */
+
+        #particle-cont{
+      width:100%;
+      background-color: rgb(83,103,255);
+      margin:auto;
+      margin-bottom: 950px;
+
+      
+      
+    }
+    #particles-js{
+      width: 99%;
+      background-color: rgb(83,103,255);
+      display:grid;
+      background-image: url(images/shield-groww.0d0cc15e.png);
+      position: absolute;
+    }
+
+
+   
+    
+     #img3d {
+      position: absolute;
+       transform: (40%, -50%); 
+      margin-left: 8%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 17%;
+    } 
+    #img3d div h1{
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: -35px;
+    }
+
+    #img3d div p{
+      font-size: 1.2rem;
+      color: white;
+      margin-top:10%;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+
+
+/* this code is for testimonial box */
+#testimonials_box{
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f6f6f7;
+    margin: 0 auto;
+
+}
+#testimonials_box>div:nth-child(1){
+    width: 90%;
+    margin: 0 auto;
+    
+    
+
+}
+#testimonials_box>div:nth-child(1) h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+}
+#testimonials_box>div:nth-child(2){
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    
+}
+#testimonials_box>div:nth-child(2) p{
+    font-size: 18px;
+    color:#7c7e8c ;
+    margin: 0;
+    
+}
+#testimonials_box>div:nth-child(2) a{
+     color: #00d09c;
+        
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: 600;
+
+}
+#testimonials_box u{
+        text-decoration: none;
+        color: #00d09c;
+        font-size: 16px;
+        font-weight: 600;
+
+}
+
+#testimonials_box u:hover{
+    text-decoration: underline;
+}
+
+#testimonials_boxs{
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+#testimonials_boxs>div{
+    width: 290px;
+    padding: 25px 35px;
+    background-color: white;
+    border-radius:10px;
+    
+    
+}
+#testimonials_boxs>div:hover{
+    box-shadow:
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034)
+;
+    cursor: pointer;
+}
+.testimonials_img_head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 86px 155px;
+    
+
+}
+.testimonials_img ,.testimonials_img img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+.testimonials_para{
+    margin-top: 20px;
+
+}
+.testimonials_para p{
+    font-size: 18px;
+    line-height: 36px;
+    
+}
+.testimonial_names{
+    margin-top: 20px;
+
+}
+.testimonial_names h4{
+    font-size: 17px;
+}
+.testimonials_stars{
+    display: flex;
+    padding-top: 4px;
+
+}
+
+.testimonials_stars span{
+    
+    font-size: 27px;;
+   color: #ffb61b;
+    margin-right: 10px;
+    
+    
+    
+}
+
+
+
+/* ------------- Card transition xy---------- */
+
+
+.cardTransCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cardTransLeft{
+  margin: 160px 110px;
+  color: #8B8D9A;
+}
+
+.cardTransLeft h1 {
+font-size: 3rem;
+color:rgb(68,71,91);
+font-weight: 600;
+line-height: 4rem;
+}
+
+.cardTransLeft p{
+  color:#8B8D9A;
+  width:80%;
+  line-height: 2rem;
+    margin-bottom: 35px;
+}
+
+.cardFlexWrap{
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+.cardFlexWrap img{
+  margin-top: 35px;
+  margin-left: -10px;
+  margin-right: 35px;
+}
+
+.cardFlexWrap h3{
+  color:rgb(68,71,91);
+  margin-bottom: -7px;
+}
+
+.cardFlexWrap p{
+  margin-bottom: -5px;
+  line-height: 1.5rem;
+  max-width: 320px;
+}
+
+#cardTransRightCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardTransRightCont img {
+  width:250px;
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
+
+#cardTransRightCont img:hover {
+  transform: scale(1.05);
+  transition: 0.5s linear;
+}
+
+
+
+
+/* this code is writhn by kishan  */
+
+.Box{
+                background-color:#00d09c;
+                border-radius: 2vw;
+                width:85vw;
+                height:27.3vw;
+                display: Box;margin-left: auto; margin-right: auto;
+               margin-top: -10px;
+            }
+            .Box h1{
+                color: white;
+                margin-left: 7%;
+                width: 59%;
+                font-size:250%;
+                padding-top: 9%;   
+            }
+            .Box    h2{
+                color:white;
+                width: 60%;
+                margin-left:7%;
+                font-size: 110%;
+            }
+            .Box    #touch{
+                text-align: center;
+                font-size: 120%;
+                background-color: white;
+                color:#00d09c;
+                border-radius: 9px;
+                border:white;
+                width: 16%;
+                height: 12%;
+                margin-left: 7%;
+                margin-top: 3%;
+            }
+            .Box   img{
+                width: 23%;
+                height: 90%;
+                float: right;
+                margin-top:3.29%;  
+                margin-right: 9%;
+            }
+            /* .box-2{
+                background-color: #090c41d3;
+                width: 98.3vw;
+                height: 30vw;
+                margin-top: 7%;
+                margin-bottom: 7%;
+            }
+            .m1{
+                width: 40%;
+                /* margin-right: 75vw; */
+                /* float:left; */
+                /* margin-left: 25%; */
+            /* }*/ 
+
+
+    
+
+            #last_box{
+                margin-top: 70px;
+    background-color: #1e2232;
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+#last_box>div:nth-child(1){
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+    
+
+    
+
+}
+#contact_grow_img, #contact_grow_img img{
+    width:150px;
+    height: 50px;
+    margin-bottom: 20px;
+    
+
+}
+#contact_address p{
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-weight:500;
+
+
+}
+#contact_address u {
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-weight:500;
+
+}
+#contact_socialMedia{
+    display: flex;
+    margin-top: 10px;
+}
+#contact_socialMedia>div{
+    
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+.last_box_head{
+    color: #fff;
+    margin: 0;
+    font-size:20px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.last_box_info p{
+    color: #fff;
+    font-size:15px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+#last_box hr{
+    width: 85%;
+    color:lightgray;
+    
+
+}
+
+#last_box_store{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#stores{
+    display: flex;
+}
+#last_box_store p{
+    color: #fff;
+    font-size: 15px;
+
+
+}
+#stores>div{
+    margin-left: 15px;
+
+}
+ 
+       
+
+
+    
+    </style>
+</head>
+<body>
+     <!-- this code for top nav bar wirthen by rakesh  -->
+
+
+     <div id="nav_bar">
+        <div id="nav_bar_logo">
+            <img id = 'main_logo' src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg" placeholder = "logo image">
+
+        </div>
+      
+        
+        <div id="nva_bar_search">
+            <input type="text" id="nva_bar_search_input" placeholder="Search stocks and mutal Funds">
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/search.494f6987.svg">
+            </div>
+
+        </div>
+       
+
+            <div>
+                <button id="btn" onclick="blur_boby()">Login/Register</button>
+            </div>
+            <div id = 'login_box'>
+                <div id = 'login_btn'>
+                    <button>&times;</button>
+
+                </div>
+                <div id="log_box_left">
+                    <div>
+                        <p>Simple, Free</p>
+                    </div>
+                    <div>
+                        <p>Investing.</p>
+                    </div>
+
+                    <div>
+                        <p>Stocks</p>
+                    </div>
+
+
+
+                </div>
+                <div id = 'log_box_right'>
+
+                    <div id = 'log_box_email'>
+
+                         <div id = 'log_box_heading'>
+                        <p>Welcome to Groww</p>
+                    </div>
+                    <div id = 'log_box_google'>
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/google-icon.5c764c55.svg">
+                        <p>continue with Google</p>
+                    </div>
+
+                    <div id="or">
+                        <p>Or</p>
+                    </div>
+                    <div class = 'log_box_input'>
+                        <input type ='email' placeholder = 'Your Email Address' id= 'user_email'>
+                    </div>
+
+                    <div class = 'log_box_button' id = 'sign_email' >
+                        <p class = 'log_box_button_p'>continue</p>
+                    </div>
+
+                    </div>
+                    <div id = 'log_box_pass'>
+                        <div id="log_box_pass_heading">
+                            <p>Join Groww</p>
+                        </div>
+                        <div class = 'log_box_input'>
+                            <input type ='email' placeholder = 'Your Email Address' id='user_email_dub'>
+                        </div>
+
+                        <div id = 'log_box_password'>
+                            <input type='password' placeholder = 'Enter Password ' id = 'user_password'>
+
+                        </div>
+
+                        <div id = 'log_box_dis'>
+                            <!-- <p>Minimum 8 aphanumeric charcters required</p> -->
+                        </div>
+
+                       
+                            <div class = 'log_box_button' id  = 'log_box_button_submit'>
+                                <p class = 'log_box_button_p'>sumbit</p> 
+                          </div>
+
+                        
+
+
+                    </div>
+
+
+                   
+
+
+
+                </div>
+                
+
+            </div>
+
+    </div>
+
+        <!-- this code for top nav bar wirthen by rakesh  --- end-->
+    
+    <!-- Code by Bharadwaj Bhat -->
+
+    <div class="container" id="get-started">
+        <div class="subCont">
+            <div class="get-st-1">
+                <h1>Invest in
+                    <div class="text-trans">
+                        <span> Stocks </span>
+                        <span> Mutual Funds </span>
+                        <span> Future & Options </span>
+                        <span> US Stocks </span>
+                        <span> Gold </span>
+                        <span> FDs </span>
+                    </div>
+                </h1>
+                <p>Trusted by <span>Millions</span> of Indians. Start investing today.</p>
+                <button id="get-st-bt" onclick="Login_box()">Get Started</button>
+            </div>
+        </div>
+        <div class="get-st-2">
+            <a class="transition-1">
+                <img src="images/mf-home.svg">
+                <p> Mutual Funds</p>
+            </a>
+            <a class="transition-1">
+                <img src="images/stocks-home.svg">
+                <p> Stocks </p>
+            </a>
+            <a class="transition-2">
+                <img src="images/ft&opt-home.svg">
+                <p> Future & Options </p>
+            </a>
+            <a class="transition-2">
+                <img src="images/US-st-home.svg">
+                <p> US Stocks </p>
+            </a>
+            <a class="transition-3">
+                <img src="images/gold-home.svg">
+                <p> Gold </p>
+            </a>
+            <a class="transition-3">
+                <img src="images/FD-home.svg">
+                <p> Fixed Deposites </p>
+            </a>
+    
+        </div>
+    
+    </div>
+
+    <!-- ----this code is wirten by  rakesh ---- code start -->
+    <div id="our_products_cont">
+        <div id="ourProducts">
+            <p>OUR PRODUCTS</p>
+        </div>
+        <div id="our_product_heading">
+            <h2>Your money. Your choice.</h2>
+
+        </div>
+        <div id="our_products_tabs">
+            <div onclick= 'display("s")'>
+                <div class="our_products_flex" id="flex_1">
+                    <div class="our_product_tabs_img">
+                        <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stock_product.d051478a.svg">
+    
+                    </div>
+                    <div class="our_products_tabs_text">
+                        <h6>Stocks</h6>
+                        
+    
+                    </div>
+
+                </div>
+                
+                <div class="bar" id="bar1"></div>
+               
+                
+            </div>
+            <div onclick="display('m')" >
+                <div class="our_products_flex" id="flex_2">
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/mf_product.ac8adcdd.svg">
+
+                </div>
+                <div class="our_products_tabs_text" >
+                    <h6>Mutual Funds</h6>
+
+                </div>
+            </div>
+            <div id="bar2"></div>
+                
+            </div>
+            <div onclick="display('g')">
+                <div class="our_products_flex" id="flex_3">
+
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/gold_product.14cb26a3.svg">
+                </div>
+                <div class="our_products_tabs_text">
+                    <h6>Gold</h6>
+
+                </div>
+               </div>
+               <div id="bar3"></div>
+                
+            </div>
+            <div onclick="display('u')">
+                <div class="our_products_flex" id="flex_4">
+
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/us_product.bd76aa25.svg">
+                </div>
+                <div class="our_products_tabs_text">
+                    <h6>US Stocks</h6>
+
+                </div>
+               </div>
+               <div id="bar4"></div>
+                
+            </div>
+            <div onclick="display('f')">
+                <div class="our_products_flex" id="flex_5">
+
+                <div class="our_product_tabs_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/fd_product.72e6a2ed.svg">
+                </div>
+                <div class="our_products_tabs_text">
+                    <h6>FDs</h6>
+                    
+
+                </div>
+               
+                </div>
+                <div id="bar5"></div>
+            </div>
+           
+
+        </div>
+        <div id="our_product_display">
+            <div class="out_product_display_image">
+                <img id= 'product_imgae'src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stocks.74948e96.png" alt="our-product-image">
+
+            </div>
+            <div class="our_product_display_info">
+                <div class = 'our_product_display_info_heading'>
+                    <h1 id="info_head">Zero</h1><h2 id="info_head2">account charges</h2>
+
+                </div>
+                
+                <p id="info_para">You don't have to pay single rupee for opening a stocks acount or account maintenace.</p>
+                <div class="our_product_display_button">
+                    <button onclick = 'Login_box()'>Create Account For Free</button>
+    
+                </div>
+            </div>
+           
+
+        </div>
+
+    </div>
+
+
+    <!-- By Bharadwaj  -->
+
+                                 <!-- Js particles (image) -->
+                            
+    <div id="particle-cont">       
+        <div id='particles-js'></div>
+        <div id="img3d">
+            <div>
+                <h1> Trusted by</h1>
+                <h1>10 Million+ users</h1>
+                <p>we've got the ISO 27001:2013 certification to show for it! Our cuting- edge technology ensures that all
+                    your
+                    information remains fully encrypted and secure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- this code is wirtten by rakesh ---- code ended -->
+
+
+    <!-- This code is coded by rakesh -- keep learing .keep growing ---  code start form there -->
+    <div id="keep_learning_cont">
+        <div id="keep_learning_head">Keep learning. Keep growing.</div>
+        <div id="keep_learning_display">
+            
+                <div class="keep_learning_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/blog1.d3a78143.png">
+                    <div class="keep_learnig_img_tex">
+                        How to Select/Pick Stocks for Intraday
+                    </div>
+                </div>
+
+                <div class="keep_learning_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/blog2.2eea33cc.png">
+                    <div class="keep_learnig_img_tex">
+                        Beginners Guide to Mutual Funds
+                    </div>
+                </div>
+                <div class="keep_learning_img">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/blog3.5bbd4db3.png">
+                    <div class="keep_learnig_img_tex">
+                        How to Diversify in the Time of Market Volatility
+                    </div>
+                </div>
+
+                </div>
+
+            <div id="keep_learing_articles">
+                <!-- <a href=""><u>View all articles</u> → </a> -->
+
+            </div>
+
+    </div>
+
+    <!-- this code is coded by rakesh --- code ended  -->
+
+    <!-- this code is coded by rakesh -- In the Press -->
+
+    <div id="in_the_press">
+        <div>
+            <h1><span>In The Press</span></h1>
+        </div>
+        
+        <div id="in_the_press_img">
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/ys.9166bd37.svg">
+
+            </div>
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/live.7edf8d7a.svg">
+            </div>
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/business.dc402a84.svg">
+            </div>
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/enter.09e9d78c.svg">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="testimonials_box">
+        <div>
+            <h2>Creating proud investors.</h2>
+        </div>
+            <div>
+                <div><p>You can feel the pride of being a Groww invetor in theit words</p></div>
+                <div style="display:none"><a href=""><u>View More</u> → </a>
+                </div>
+            </div>
+
+            <div id="testimonials_boxs">
+                <div>
+                    <div class="testimonials_img_head">
+                        <div class='testimonials_img'>
+                            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/ankitImg.863e0afa.png">
+        
+                        </div>
+                        <div class="testimonials_stars">
+                         
+                                <span>&#9733;</span>
+                                <span> &#9733;</span>
+                                <span> &#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                     
+                        </div>
+                    </div>
+                        <div class="testimonials_para">
+                            <p>"Groww.in was the platform where I first got on board
+                                to MF and I would have to say, even for a beginner like me it mde things quite
+                            easier to explore and invest. </p>
+                        </div>
+                        <div class="testimonial_names">
+                        <h4>Ankit Puri</h4>
+                        </div>
+                        <div>
+        
+                            <p>Product Specialist, Google</p>
+                        </div>
+                    
+        
+                </div>
+                <div>
+                    <div class="testimonials_img_head">
+                        <div class='testimonials_img'>
+                            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/amitImg.ebb056f0.jpeg">
+        
+                        </div>
+                        <div class="testimonials_stars">
+                                 <span>&#9733;</span>
+                                <span> &#9733;</span>
+                                <span> &#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                        </div>
+                    </div>
+                        <div class="testimonials_para">
+                            <p>"Actually, the UI is exremely simple and easy for users to adapt, that's 
+                                what makes it unique. Many of my referrals have aslo joined and enjoying GROWW. </p>
+                        </div>
+                        <div class="testimonial_names">
+                        <h4>Amit Sharma</h4>
+                        </div>
+                        <div>
+        
+                            <p>Solutions Architect, Amazon Web Services</p>
+                        </div>
+
+                </div>
+                <div>
+                    <div class="testimonials_img_head">
+                        <div class='testimonials_img'>
+                            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/roopaImg.5575c84f.jpg">
+        
+                        </div>
+                        <div class="testimonials_stars">
+                                <span>&#9733;</span>
+                                <span> &#9733;</span>
+                                <span> &#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                        </div>
+                    </div>
+                        <div class="testimonials_para">
+                            <p>"if you  are one of those who would like to take control of how you save, use Groww. it's ridiculously easy portal.
+                                It just took me 5 mins to set up and invest. </p>
+                        </div>
+                        <div class="testimonial_names">
+                        <h4>Roopa Ambejar</h4>
+                        </div>
+                        <div>
+        
+                            <p>Product Specialist, Google</p>
+                        </div>
+
+
+                </div>
+        
+        
+        
+            </div>
+        
+
+    </div>
+
+    <!-- this code wirtern by bharahwahj div cards  -->
+
+
+    <div class="cardTransCont">
+        <div class="cardTransLeft">
+            <div class="cardTransWrap">
+                 <h1>Invest anywhere, anytime. </h1>
+                <p>Don't worry about which device to use. Because we're on every one of them. </p>
+            </div>   
+            <div class="cardFlexWrap">
+                <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/dash.a7e0c55c.svg">
+                </div>
+                <div>
+                    <h3> Stay on top of everything </h3>
+                     <p> Keep track of your investment at anytime with Groww. </p>
+                </div>
+            </div>
+            <div class="cardFlexWrap">
+                <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/sync.3ac006aa.svg">
+                </div>
+                <div>
+                    <h3> Always in sync </h3>
+                    <p> Groww will take care of syncronizing your data so you can focus on investing</p>
+                </div>
+            </div>
+         </div>
+        <div class="cardTransRigth">
+            <div id="cardTransRightCont">
+                <div id="inner">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/ios.0a99dcbb.png" alt="">
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/android.6dfb12ca.png">
+                </div>
+                <div>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/web.634ac717.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- this code writen by kishan kumar -->
+    <div class="Box">
+        <div>
+            <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/hns-support-img.c56178f0.png">
+        </div>
+            <h1>We’re with you, at every step.</h1>
+        <h2>For any query you have, find the answer quickly on our Help & Support.<br>Need a little more help? We’re happy to talk via
+        call or chat.</h2>
+        <button onclick="btn()" id="touch">Get In Touch</button>
+    </div>
+    </div>
+
+    <div id = 'last_box'>
+
+        <div>
+            <div id = 'contact'>
+                <div id = 'contact_grow_img'>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg">   
+
+                    
+
+                </div>
+                <div id = 'contact_address'>
+                    <p>No.11, 2nd floor, 80FT Road </p>
+                        <p>4th Block, S.T Bed</p> 
+                        <p>Kormangala, Bengaluru - 560034</p>  
+                        
+                        <p><u>Contact Us</u></p>
+
+
+                </div>
+                <div id = 'contact_socialMedia'>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/fb_icon_groww.1c94e937.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/twitter_icon_groww.4cb988f6.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/yt_icon_groww.ec96b677.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/instagram_icon_groww.0454c1a2.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/linkedin_icon_groww.b15f8240.svg" ></div>
+                    
+
+                </div>
+
+            </div>
+            <div class = 'last_box_info'>
+                <h1 class="last_box_head">GROWW</h1>
+                <p>About Us</p>
+                <p>AMC Mutual Funds</p>
+                <p>Pricing</p>
+                <p>Groww Q&A</p>
+                <p>Blog<p>
+                <p>Media & Press</p>
+                <p>Help and Support</p>
+
+
+
+            </div>
+            <div class = 'last_box_info'>
+
+                <h1 class="last_box_head">EXPLORE</h1>
+            <p>Mutual Funds</p>
+            <p>Stocks</p>
+            <p>NFO</p>
+            <p>IPO</p>
+            <p>US Stocks</p>
+            <p>Fixed Deposit</p>
+            <p>Gold</p>
+
+            </div>
+            
+
+                <div class = 'last_box_info'>
+                    <h1 class="last_box_head">RESOURCES</h1>
+                    <p>Mutual Fund Beginners</p>
+                    <p>Learn Stocks Market</p>
+                    <p>Calculators</p>
+                    <p>Glossary</p>
+                    <p>Open Demat Account</p>
+                    <p>Groww Digest</p>
+                    <p>Download Forms</p>
+                </div>
+
+            
+
+        </div>
+        <hr>
+
+    <div id = 'last_box_store'> 
+        <div>
+            <p>Ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India</p>
+
+        </div>
+
+        <div id= 'stores'>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/app-store-logo.060773ea.svg'>
+            </div>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/google-play-badge.0547a72f.svg'>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+ 
+</body>
+ 
+</body>
+
+
+</html>
+
+<script src = "particles.js"></script>
+<script src = "app.js"></script>
+<script>
+    function display(a){
+       if(a == 'm'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/mf.6c2cde91.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = '0%'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'commission'
+            var p = document.getElementById('info_para');
+                p.innerText = 'Select from 5000+ direct mutal funds and get higher return than regular funds.'
+            var bar = document.getElementById('bar2');
+                bar.setAttribute('class','bar')
+            var bars = document.getElementById('bar1');
+                bars.removeAttribute('class')
+            var barg = document.getElementById('bar3')
+                barg.removeAttribute('class');
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+
+       }
+       if(a == 's'){
+            
+        var flex = document.querySelectorAll('flex_');
+            flex.style
+        // for(let i = 0; i<flex.length ; i++){
+        //     console.log(flex[i]);
+        // }
+
+            
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stocks.74948e96.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = 'Zero'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'account charges'
+            var p = document.getElementById('info_para');
+                p.innerText = "You don't have to pay single rupee for opening a stocks acount or account maintenace.";
+        
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.setAttribute('class','bar')
+            var barg = document.getElementById('bar3')
+                barg.removeAttribute('class');
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+       }
+       
+       if(a == 'g'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/gold.4b4ed1a9.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = '99.9%'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'purity'
+            var p = document.getElementById('info_para');
+                p.innerText = "Invest in digital gold as low as ₹10 without any extra commission or making charges.";
+        
+
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.removeAttribute('class');
+
+            var barg = document.getElementById('bar3')
+            barg.setAttribute('class','bar')
+
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+       }
+      
+       if(a == 'u'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/us.fc57ceac.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = 'Free'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'account opening'
+            var p = document.getElementById('info_para');
+                p.innerText = "Invest in Apple Google Netflix and many more US companies that you live without any brokerage free.";
+        
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.removeAttribute('class');
+
+            var barg = document.getElementById('bar3')
+            barg.removeAttribute('class');
+
+                var baru = document.getElementById('bar4')
+                baru.setAttribute('class','bar')
+                var barf = document.getElementById('bar5')
+                barf.removeAttribute('class');
+
+
+       }
+       if(a == 'f'){
+           var img = document.getElementById('product_imgae');
+            img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/fd.16c65ccc.png');
+            var h1 = document.getElementById('info_head');
+                h1.innerText = '6.7%'
+            var h2 = document.getElementById('info_head2');
+                h2.innerText = 'interest rate'
+            var p = document.getElementById('info_para');
+                p.innerText = "Open fixed deposits in any bank with higher interest rates without opening a bank account.";
+        
+                var barm = document.getElementById('bar2');
+                barm.removeAttribute('class');
+            var bars = document.getElementById('bar1');
+            bars.removeAttribute('class');
+
+            var barg = document.getElementById('bar3')
+            barg.removeAttribute('class');
+
+                var baru = document.getElementById('bar4')
+                baru.removeAttribute('class');
+                var barf = document.getElementById('bar5')
+                barf.setAttribute('class','bar');
+       }
+    }
+
+
+    
+    //this will control who log in box works 
+        
+    let box = document.getElementById('btn');
+        box.addEventListener('click',Login_box);
+
+
+        function Login_box(){
+            let disp = document.getElementById('login_box');
+             disp.style.display = 'flex';
+            //  disp.setAttribute('class', 'unblur')
+        //    document.body.setAttribute('class', 'blur');
+            
+            
+             
+           
+            
+
+        }
+
+
+    // function blur_boby(){
+    //        document.body.setAttribute('class', 'blur');
+
+    // }
+
+    let log_box = document.getElementById('login_btn');
+    log_box.addEventListener('click',function(){
+            let dis = document.getElementById('login_box');
+
+
+            dis.style.display = 'none';
+           
+         
+
+        });
+
+
+       
+            
+
+        let sig_cont = document.getElementById('sign_email');
+         sig_cont.addEventListener('click',function(){
+
+            
+
+                 var user_email = document.getElementById('user_email').value;
+                 if(user_email != "") {
+
+                    let first = document.getElementById('log_box_email');
+                first.style.display = 'none';
+
+            let second = document.getElementById('log_box_pass');
+                second.style.display = 'block';
+
+                document.getElementById('user_email_dub').value = user_email;
+
+
+
+
+                 }else{
+                     alert('Enter email id')
+                 }
+        
+         })
+
+
+         let sumbit = document.getElementById('log_box_button_submit');
+
+         
+
+            sumbit.addEventListener('click',function(){
+                  var users = [
+            {
+                email: 'rakesh@gmail.com',
+                password: '123'
+            },
+            {
+                email: 'bharadwaj@gmail.com',
+                password: '123'
+            },
+            {
+                email : 'kishan@gmail.com',
+                password: '123'
+            }
+         ];
+
+                var user_email = document.getElementById('user_email').value;
+                let pass = document.getElementById('user_password').value;
+
+                
+
+                if(pass != ""){
+
+                 
+                    for(let i = 0; i<users.length; i++){
+                    if(user_email == users[i].email && pass == users[i].password){
+                        let user = {
+                        email : user_email,
+                        password : pass,
+                    }
+
+                    let users = [];
+                   
+                        
+                    
+                    users.push(user);
+                    localStorage.setItem('users',JSON.stringify(users));
+
+                     window.location.href="stocks.html";
+                     
+                
+                        
+                    } 
+                }
+
+
+
+
+               
+
+               
+                    
+
+                } else {
+                    alert('Enter password')
+                }
+
+               
+            })
+
+
+
+</script>

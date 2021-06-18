@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="investmentStyleSheet.css">
+
+        <script src="https://kit.fontawesome.com/1ed9e22241.js" crossorigin="anonymous"></script>
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Investments </title>
+</head>
+<body>
+    <!-- this code for top nav bar wirthen by rakesh  -->
+
+
+    <div id="nav_bar">
+        <div id="nav_bar_logo">
+            <img id = 'main_logo' src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg" placeholder = "logo image">
+
+        </div>
+        <div id="nav_bar_options">
+            <div id="nva_bar_explore">
+                <p class="small_box_green">Explore</p>
+    
+            </div>
+            <div id="nva_bar_invest">
+                <P>investments</P>
+            </div>
+
+        </div>
+        
+        <div id="nva_bar_search">
+            <input type="text" id="nva_bar_search_input" placeholder="Search stocks and mutal Funds">
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/search.494f6987.svg">
+            </div>
+
+        </div>
+        <div id="nva_bar_icons">
+            <div id="nva_bar_icons_bell">
+            <img src="images\alarm.png">
+            </div>
+            <div id="nva_bar_icons_wallet">
+                <img src="images\wallet.png">
+
+            </div>
+            <div id="nva_bar_icons_">
+                <img src="images\shopping-cart-empty-side-view.png">
+
+
+            </div>
+            
+            
+
+        </div>
+        <div id="nva_bar_account">
+            <div id="nva_bar_icons_dp" >
+                <img id = 'user_image'src="images\dp.JPG">
+    
+                </div>
+                
+    
+            
+            <div id="info" >
+            
+
+        
+               <div id = 'use_info'>
+                   <div id = 'user_img'>
+                       <img src='images\dp.JPG' id="users_dp">
+                   </div>
+                   <div id = 'user_details'>
+                       <p id ='user_name'>Pilly Rakesh</p>
+                       <p id = 'user_email'>Rakesh.rock3823@gmail.com</p>
+                   </div>
+
+               </div>
+               <div id = 'info_list'>
+
+                <div id = 'bank'>
+                    <div id= 'bank_logo' class= 'info_img'>
+                     <img src = "images\museum.png">
+                    </div>
+                    <div>
+                        <p class="info_p">Bank & AutoPay</p>
+ 
+                    </div>
+ 
+                 </div>  
+                  <div id = 'infor_import'>
+                     <div id= 'import_logo' class= 'info_img'>
+                      <img src = "images\folder.png">
+                     </div>
+                     <div>
+                         <p class="info_p" >Import Funds</p>
+  
+                     </div>
+ 
+                 </div>
+                 <div id = 'info_watchlist'>
+                         <div id= 'watchlist_logo' class= 'info_img'>
+                          <img src = "images\bookmark.png">
+                         </div>
+                         <div>
+                             <p class="info_p">Watchlist</p> 
+      
+                         </div>
+                 </div>
+ 
+                  <div id = 'info_orders'>
+                             <div id= 'order_logo' class= 'info_img'>
+                              <img src = "images\page.png">
+                             </div>
+                             <div>
+                                 <p class="info_p"> Orders</p>
+          
+                             </div>
+                  </div>
+ 
+                 <div id = 'info_sips'>
+                                 <div id= 'sips_logo' class= 'info_img'>
+                                  <img src = "images\calendar.png">
+                                 </div>
+                                 <div>
+                                     <p class="info_p">SIPs </p>
+              
+                                 </div>
+                 </div>
+ 
+                 <div id = 'info_help'>
+                                     <div id= 'help_logo' class= 'info_img'>
+                                      <img src = "images\phone.png">
+                                     </div>
+                                     <div>
+                                         <p class="info_p">Help & Support </p>
+                  
+                                     </div>
+                 </div>
+                     <div id = 'info_settings'>
+                                         <div id= 'settings_logo' class= 'info_img'>
+                                          <img src = "images\settings.png">
+                                         </div>
+                                         <div>
+                                             <p class="info_p"> Settings</p>
+                      
+                                         </div>
+                      </div>
+                     <div id = 'dark_mode' onclick = 'dark()'>
+                                             <div  class= 'info_img'>
+                                              <img src = "images\night-mode.png">
+                                             </div>
+                                             <div>
+                                                 <p class="info_p"> Dark Mode</p>
+                          
+                                             </div>
+                     </div>
+                         <div id = 'logout'>
+                              <div  class= 'info_img'>
+                               <img src = "images\in.png">
+                              </div>
+                         <div >
+                              <p class="info_p"> Log Out</p>
+                              
+                             </div>
+                          </div>
+
+               </div>
+            
+
+              
+
+
+               </div>
+
+            </div>
+           
+
+        </div>
+       
+    <!-- this code for top nav bar wirthen by rakesh  --- end-->
+
+    <div class="holdingsP">
+        <p> Holdings(1)</p>
+    </div>
+    <div class="investCont">
+        <div class = "holdings">
+            <div>
+                <p id="holdingsP" >₹ </p>
+                <p> current value </p>
+            </div>
+            <div id = "holdingSpan">
+                <p> invested value <span id = "investedSP">- ₹ </span> </p>
+                <p> 1D Return <span id = "returnsSP">- ₹</span> <span id = "spanParanthesis">(1.77%)</span></p>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div id = "sellWindowCont">
+            <div class = "sellWindow">
+                        <i class="fas fa-mouse-pointer"></i>
+                    <div class = "pointerIconP">
+                        <span> Select a stock </span>
+                        <p>  to view investment options </p>
+                    </div>
+                    <div class = "pointerFooter">
+                        <p> Balance ₹  <span id = "pointerFooterBalance"></span></p>
+                        <div></div>
+                        <a href="wallet.html" id = "pointerAddM"> +ADD MONEY </a>
+                    </div>
+            </div>
+   <!----------------------- Pointer page END ----------------->
+            <div id = 'sellCard'>
+                <div id="visible">
+                    <div>
+                        <div id="buySell">
+                            <p id="buyP"> SELL </p>
+                            <p id="sellP"> </p>
+                        </div>
+                        <div id="buySellP">
+                            <div>
+                                <p> Type <span> Delivery </span> </p>
+                                <p> <span id = "NsharesSP"> 0 </span> Net Positions </p>
+                            </div>
+                            <div id="sharesInput">
+                                <p> Shares <span> NSE </span></p>
+                                <input type="text" id="share-value-inputBox" placeholder="">
+                            </div>
+                            <div id="priceInput">
+                                <p> Price <span> Market </span></p>
+                                <div>
+                                    <p id="priceVal"> ₹3,273.80</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="walletBalance">
+                            <div></div>
+                            <div>
+                                <p><span> <i class="fas fa-wallet"></i> </span> Balance <span></span> </p>
+                            </div>
+                            <div>
+                                <p> ₹ <span id="walletBalanceDispM"> </span></p>
+                            </div>
+                        </div>
+                        <div id="amountLessError">
+                            <div>
+                                <p id="amountLessErrorP">Available Positions not enough</p>
+                            </div>
+                        </div>
+                        <div id="bestPrice">
+                            <p> Orders will execute at best price or will get cancelled on the next trading day </p>
+                        </div>
+                        <div class='btnWrap'>
+                            <button onclick="sellTata()" id="sellBtn"> Sell </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Placing order icons animation -->
+            
+            <div id="placingOrderIcon">
+                <i class="fas fa-circle-notch fa-spin" id="circleIcon"></i>
+                <i class="fas fa-spinner fa-pulse" id="circleIcon2"></i>
+            
+                <p> Placing Your Order...</p>
+            </div>
+            <!--  end of placing order icon -->
+            <!--  sell success page  -->
+            <div id="buySuccess">
+                <div class="buySuccess1">
+                    <i class="fas fa-check-circle"></i>
+                    <p> Sell Successful </p>
+                </div>
+                <div class="buySuccDiv">
+                    <div>
+                        <p> Shares </p>
+                        <p id="ShareBought"> </p>
+                    </div>
+                    <div>
+                        <p> Price </p>
+                        <p> ₹3,983</p>
+                    </div>
+                    <div>
+                        <p> Type </p>
+                        <p> Delivery </p>
+                    </div>
+                </div>
+                <div class="doneBtn">
+                    <button onclick=" done()"> Done </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id = 'last_box'>
+
+        <div>
+            <div id = 'contact'>
+                <div id = 'contact_grow_img'>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg">   
+
+                    
+
+                </div>
+                <div id = 'contact_address'>
+                    <p>No.11, 2nd floor, 80FT Road </p>
+                        <p>4th Block, S.T Bed</p> 
+                        <p>Kormangala, Bengaluru - 560034</p>  
+                        
+                        <p><u>Contact Us</u></p>
+
+
+                </div>
+                <div id = 'contact_socialMedia'>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/fb_icon_groww.1c94e937.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/twitter_icon_groww.4cb988f6.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/yt_icon_groww.ec96b677.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/instagram_icon_groww.0454c1a2.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/linkedin_icon_groww.b15f8240.svg" ></div>
+                    
+
+                </div>
+
+            </div>
+            <div class = 'last_box_info'>
+                <h1 class="last_box_head">GROWW</h1>
+                <p>About Us</p>
+                <p>AMC Mutual Funds</p>
+                <p>Pricing</p>
+                <p>Groww Q&A</p>
+                <p>Blog<p>
+                <p>Media & Press</p>
+                <p>Help and Support</p>
+
+
+
+            </div>
+            <div class = 'last_box_info'>
+
+                <h1 class="last_box_head">EXPLORE</h1>
+            <p>Mutual Funds</p>
+            <p>Stocks</p>
+            <p>NFO</p>
+            <p>IPO</p>
+            <p>US Stocks</p>
+            <p>Fixed Deposit</p>
+            <p>Gold</p>
+
+            </div>
+            
+
+                <div class = 'last_box_info'>
+                    <h1 class="last_box_head">RESOURCES</h1>
+                    <p>Mutual Fund Beginners</p>
+                    <p>Learn Stocks Market</p>
+                    <p>Calculators</p>
+                    <p>Glossary</p>
+                    <p>Open Demat Account</p>
+                    <p>Groww Digest</p>
+                    <p>Download Forms</p>
+                </div>
+
+            
+
+        </div>
+        <hr>
+
+    <div id = 'last_box_store'> 
+        <div>
+            <p>Ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India</p>
+
+        </div>
+
+        <div id= 'stores'>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/app-store-logo.060773ea.svg'>
+            </div>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/google-play-badge.0547a72f.svg'>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+    
+</body>
+</html>
+
+<script>
+
+     
+var users = [
+{
+      name : 'Pilly Rakesh',
+      email: 'rakesh@gmail.com',
+    imgae: "images\\dp.JPG",
+    
+},
+{
+     name: 'Kishan Kumar',
+     email: 'kishan@gmail.com',
+     imgae: "images\\kishan.jpg",
+},
+
+{
+    name: 'Bharadwaj S',
+    email: 'bharadwaj@gmail.com',
+    imgae: 'images\\bharadwaj.jpg',
+}
+
+];
+
+
+let name = JSON.parse(localStorage.getItem('users'));
+for(let  i = 0; i<users.length; i++){
+
+    if(users[i].email == name[0].email){
+        document.getElementById('user_name').innerText = users[i].name;
+        document.getElementById('user_email').innerText = users[i].email;
+        let dp  = document.getElementById('user_image');
+            dp.setAttribute('src',users[i].imgae)
+
+        document.getElementById('users_dp').src = users[i].imgae;
+
+       
+    }
+}
+
+
+
+     
+    
+
+    let info = document.getElementById('nva_bar_icons_dp') //this is 
+        info.addEventListener('click',function(){
+            let div = document.getElementById('info');
+            
+
+            if(div.style.display == 'none'){
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+
+        });
+
+        let div_info = document.getElementById('info');
+        div_info.addEventListener('mouseleave',function(){
+            div_info.style.display = 'none';
+        })
+
+
+
+     
+
+
+function dark(){
+    
+   let dark = document.getElementById('dark_mode');
+    
+        document.body.classList.toggle('darkmode');
+
+        if(document.body.classList.contains('darkmode')){
+
+            let image =  document.getElementById('main_logo');
+                
+            image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg')
+            
+
+        } else{
+            let image =  document.getElementById('main_logo');
+                
+            image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
+        }
+
+        
+
+}
+
+
+let logout = document.getElementById('logout');
+    logout.addEventListener('click',function(){
+        window.location.href = 'index.html';
+    });
+
+
+    nav_bar_logo
+
+
+    let explor = document.getElementById('nva_bar_explore');
+    explor.addEventListener('click',function(){
+        window.location.href = 'stocks.html';
+    })
+
+    let home = document.getElementById('nav_bar_logo');
+    home.addEventListener('click',function(){
+        window.location.href = 'stocks.html';
+    })
+
+
+    
+
+
+    let wallet = document.getElementById('nva_bar_icons_wallet');
+    wallet.addEventListener('click',function(){
+        window.location.href = 'wallet.html';
+    })
+
+    let invest = document.getElementById('nva_bar_invest');
+        invest.addEventListener('click',function(){
+            window.location.href = 'investment.html';
+        })
+
+
+
+    var price = 3273.80;
+
+    let bal = localStorage.getItem('bal');
+    bal = JSON.parse(bal);
+
+    var p = document.getElementById('holdingsP');
+
+    var p2 = document.getElementById('investedSP');
+
+    var p3 = document.getElementById('returnsSP');
+    
+
+    var num = bal[0].shares;
+    
+    var Balance = bal[0].balance;
+
+let total =  ((price+57.9) * num);
+
+    p.innerText += total.toFixed(2);
+
+    let investedVal = price*num;
+
+    p2.innerText += investedVal.toFixed(2);
+
+    p3.innerText += 57.9*num.toFixed(2);
+
+
+//-------------reflect the wallet balance---------------
+
+let footerBal = document.getElementById('pointerFooterBalance');
+
+Balance = Number(Balance);
+
+    
+    var rounde = Math.round((Balance + Number.EPSILON) * 100) / 100;
+
+footerBal.innerHTML = rounde;
+
+let clickDiv = document.querySelector(".holdings");
+
+let sellWindow = document.querySelector('.sellWindow');
+let visibleDiv = document.getElementById('sellCard');
+
+
+clickDiv.addEventListener('click', function(){
+   sellWindow.style.visibility = "hidden";
+   visibleDiv.style.visibility = 'visible';
+
+})
+
+    // display the wallet balance (MINI)-------------------------
+
+
+    let walletDisp = document.getElementById('walletBalanceDispM')
+    let sharesNum = document.getElementById('NsharesSP');
+
+    walletDisp.innerHTML = rounde;
+    sharesNum.innerHTML = num;
+
+//---------------------- Changing the input box color-----------------
+
+let inpB = document.getElementById('share-value-inputBox');
+
+var sharesInNumber = inpB.value;
+
+inpB.addEventListener('input', function(){
+
+    var p1 = document.getElementById('bestPrice');
+    var p2 = document.getElementById('amountLessErrorP');
+
+    var sellButton = document.getElementById('sellBtn');
+
+    let temp2 = Number(inpB.value);
+
+    let sharesInNumber = document.getElementById('ShareBought')
+    sharesInNumber.innerHTML = inpB.value;
+
+    if(temp2 > num){
+        inpB.style.backgroundColor = "rgb(255,245,224)"; // swapping the background of the input box
+        inpB.style.color = "rgb(255,182,28)";
+        sellButton.style.backgroundColor = "rgb(255,245,224)"
+        sellButton.style.color = "black"
+
+         p1.style.visibility = "hidden";    // swapping the p tag to alert when the balance is low.
+        p2.style.visibility = "visible";
+    }
+
+    else{
+        inpB.style.background = "rgba(38, 215, 171, 0.24)";
+        inpB.style.color = 'rgb(38,215,171)';
+
+        p1.style.visibility = "visible";  // swapping back to the initial when the balance is not low.
+        p2.style.visibility = "hidden";
+
+         sellButton.style.backgroundColor = "rgb(38,215,171)"
+        sellButton.style.color = "#fff"
+
+    }
+    
+})
+
+//---------SELL FUNCTION---------------------------
+
+function sellTata(){
+    let inpNum = Number(inpB.value)
+    if(num >= inpNum ){
+        bal[0].shares = Number(bal[0].shares);
+       bal[0].shares -= inpNum;
+
+       bal[0].balance = Number(bal[0].balance);
+       bal[0].balance  = (inpNum *  3273.80);
+       
+
+        //   bal[0].balance = 0;
+
+
+       localStorage.setItem('bal', JSON.stringify(bal));
+
+       // ----- placing the order div----------------
+ 
+           visibleDiv.innerHTML = null;
+           visibleDiv.style.visibility = 'hidden';
+
+
+        
+
+        let placingIcon = document.getElementById('placingOrderIcon');
+        let buySuccess = document.getElementById('buySuccess');
+
+        placingIcon.style.visibility = 'visible';
+
+         setTimeout(function(){
+             placingIcon.style.visibility = 'hidden';
+
+             buySuccess.style.visibility = "visible";
+
+         }, 2000)
+
+  
+
+    }
+}
+
+
+function done(){
+    window.location.reload();
+}
+
+
+
+</script>

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="innerStocksStyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js'></script>
+    <script src="https://kit.fontawesome.com/1ed9e22241.js" crossorigin="anonymous"></script>
+    <title> Stocks </title>
+</head>
+<body>
+     <!-- this code for top nav bar wirthen by rakesh  -->
+
+
+     <div id="nav_bar">
+        <div id="nav_bar_logo">
+            <img id = 'main_logo' src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg" placeholder = "logo image">
+
+        </div>
+        <div id="nav_bar_options">
+            <div id="nva_bar_explore">
+                <p class="small_box_green">Explore</p>
+    
+            </div>
+            <div id="nva_bar_invest">
+                <P>investments</P>
+            </div>
+
+        </div>
+        
+        <div id="nva_bar_search">
+            <input type="text" id="nva_bar_search_input" placeholder="Search stocks and mutal Funds">
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/search.494f6987.svg">
+            </div>
+
+        </div>
+        <div id="nva_bar_icons">
+            <div id="nva_bar_icons_bell">
+            <img src="images\alarm.png">
+            </div>
+            <div id="nva_bar_icons_wallet">
+                <img src="images\wallet.png">
+
+            </div>
+            <div id="nva_bar_icons_">
+                <img src="images\shopping-cart-empty-side-view.png">
+
+
+            </div>
+            
+            
+
+        </div>
+        <div id="nva_bar_account">
+            <div id="nva_bar_icons_dp" >
+                <img id = 'user_image'src="images\dp.JPG">
+    
+                </div>
+                
+    
+            
+            <div id="info" >
+            
+
+        
+               <div id = 'use_info'>
+                   <div id = 'user_img'>
+                       <img src='images\dp.JPG' id="users_dp">
+                   </div>
+                   <div id = 'user_details'>
+                       <p id ='user_name'>Pilly Rakesh</p>
+                       <p id = 'user_email'>Rakesh.rock3823@gmail.com</p>
+                   </div>
+
+               </div>
+               <div id = 'info_list'>
+
+                <div id = 'bank'>
+                    <div id= 'bank_logo' class= 'info_img'>
+                     <img src = "images\museum.png">
+                    </div>
+                    <div>
+                        <p class="info_p">Bank & AutoPay</p>
+ 
+                    </div>
+ 
+                 </div>  
+                  <div id = 'infor_import'>
+                     <div id= 'import_logo' class= 'info_img'>
+                      <img src = "images\folder.png">
+                     </div>
+                     <div>
+                         <p class="info_p" >Import Funds</p>
+  
+                     </div>
+ 
+                 </div>
+                 <div id = 'info_watchlist'>
+                         <div id= 'watchlist_logo' class= 'info_img'>
+                          <img src = "images\bookmark.png">
+                         </div>
+                         <div>
+                             <p class="info_p">Watchlist</p> 
+      
+                         </div>
+                 </div>
+ 
+                  <div id = 'info_orders'>
+                             <div id= 'order_logo' class= 'info_img'>
+                              <img src = "images\page.png">
+                             </div>
+                             <div>
+                                 <p class="info_p"> Orders</p>
+          
+                             </div>
+                  </div>
+ 
+                 <div id = 'info_sips'>
+                                 <div id= 'sips_logo' class= 'info_img'>
+                                  <img src = "images\calendar.png">
+                                 </div>
+                                 <div>
+                                     <p class="info_p">SIPs </p>
+              
+                                 </div>
+                 </div>
+ 
+                 <div id = 'info_help'>
+                                     <div id= 'help_logo' class= 'info_img'>
+                                      <img src = "images\phone.png">
+                                     </div>
+                                     <div>
+                                         <p class="info_p">Help & Support </p>
+                  
+                                     </div>
+                 </div>
+                     <div id = 'info_settings'>
+                                         <div id= 'settings_logo' class= 'info_img'>
+                                          <img src = "images\settings.png">
+                                         </div>
+                                         <div>
+                                             <p class="info_p"> Settings</p>
+                      
+                                         </div>
+                      </div>
+                     <div id = 'dark_mode' onclick = 'dark()'>
+                                             <div  class= 'info_img'>
+                                              <img src = "images\night-mode.png">
+                                             </div>
+                                             <div>
+                                                 <p class="info_p"> Dark Mode</p>
+                          
+                                             </div>
+                     </div>
+                         <div id = 'logout'>
+                              <div  class= 'info_img'>
+                               <img src = "images\in.png">
+                              </div>
+                         <div >
+                              <p class="info_p"> Log Out</p>
+                              
+                             </div>
+                          </div>
+
+               </div>
+            
+
+              
+
+
+               </div>
+
+            </div>
+           
+
+        </div>
+       
+    <!-- this code for top nav bar wirthen by rakesh  --- end-->
+
+    
+
+    <div class = "stocksCont">
+        <div id="canvaGraph">
+            <img src="../images/tataStock.webp" alt="">
+            <p> Tata consultancy services <span id = "itServices"> IT Services </span> </p>
+            <p> ₹<span id = "tataPrice">3273.80 </span> <span id = "spanGreen"> +57.00(1.77%) </span> <span id = "oneD">1D</span></p>
+            <canvas id = "myChart"></canvas>
+            <div class = "graphFooter">
+                <p>1 Month </p>
+            </div>
+            <!--------------- analytics ------------------>
+
+            <div class='overViewCont'>
+                <div class = 'overViewHeader'>
+                    <h3 id = 'fundamentalH'> Fundamentals </h3>
+                </div>
+                <div class = 'fundamentalsCont'>
+                    <div>
+                        <h4>Market Cap </h4>
+                        <h4 id = "--2--"> ₹11,89,911Cr</h4>
+                        <h4> ROE </h4>
+                        <h4>38.03% </h4>
+                    </div>
+                    <div>
+                        <h4> P/E Ratio </h4>
+                        <h4> 37.08 </h4>
+                        <h4> EPS(TTM) </h4>
+                        <h4> 88.95% </h4>
+                    </div>
+                    <div>
+                        <h4>Industry P/E </h4>
+                        <h4> 30.79 </h4>
+                        <h4> Book Value </h4>
+                        <h4> 233.66 </h4>
+                    </div>
+                </div>
+                <div class = 'financeCont'>
+                     <p>Financials</p>
+                     <div class = 'financeBox'>
+                         <div class = 'revenueHead'>
+                             <p>Revenue</p>
+                         </div>
+                        <div>
+                            <p id = 'finGraphH'> *All values are in Rs. Cr</p>
+                        </div>
+                        <div id = 'finGraph'>
+                            <div id = 'firstGraphBar'>
+                                <div>39,946</div>
+                                <div id = 'finGraph-1'></div>
+                                <div> Mar '20 </div>
+                            </div>
+                            <div id = 'secondGraphBar'>
+                                <div>38,322</div>
+                                <div id='finGraph-2'></div>
+                                <div> Jun '20 </div>
+                            </div>
+                            <div id='thirdGraphBar'>
+                                <div> 40,135 </div>
+                                <div id='finGraph-3'></div>
+                                <div> Sep '20 </div>
+                            </div>
+                            <div id='fourthGraphBar'>
+                                <div> 42,015 </div>
+                                <div id='finGraph-4'></div>
+                                <div> Dec '20 </div>
+                            </div>
+                            <div id='fifthGraphBar'>
+                                <div> 42,015 </div>
+                                <div id='finGraph-5'></div>
+                                <div id = 'greaphFooterSpacer'> Mar '21 </div>
+                            </div>
+                        </div>
+                     </div>
+                    <div>
+                        <p> About Company </p>
+                        <div id = 'aboutCompPtag'>
+                            <p>
+                                Tata Consultancy Services Limited (TSC) is engaged in providing
+                                information technology (IT) services, digital and buisness solutions. The Company's seggments include banking,
+                                finance  <span id = 'readMoreABC'> and insurance services (BFSI); manufacturing; retail 
+                                and consumer packaged goods (CPG); telecom, media and entertainment, and others, such as energy, resources and utilities,
+                                hi-tech, life science and healthcare, s-Goverance, travel, transportation and hospitality, and other products, its 
+                                services portfolio consists of IT and assurance services, buisness intelligence and performance management, buisiness
+                                process services, cloud services, connected marketing solutions, consulting, engineering and industrial services, 
+                                enterprise solutions, IT infrastructure services, mobility products and services and platform solutions. 
+                                Its software offerings include Digital Software and Solutions, TCS BaNCS and TCS MasterCraft, among others.
+                                It services industries, including insurance, healthcare, retail, telecom and others. 
+                                </span> <span onclick="readMore()" id = SpanGreen>....Read more</span>
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!---------------end of analytics ------------>
+        </div>
+        <div class="buyWindow">
+
+           <div id = "visible">
+                <div>
+                    <div id = "buySell">
+                        <p id = "buyP"> BUY </p>
+                        <p id = "sellP">  </p>
+                    </div>
+                    <div id = "buySellP">
+                        <div>
+                            <p> Type <span>  Delivery </span> </p>
+                        </div>
+                        <div id = "sharesInput">
+                            <p> Shares <span> NSE </span></p>
+                        <input type="text" id="share-value-inputBox" placeholder="">
+                        </div>
+                        <div id = "priceInput">
+                            <p> Price <span> Market </span></p>
+                            <div>
+                            <p id="priceVal"> ₹3,273.80</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="walletBalance">
+                        <div></div>
+                    <div>
+                        <p><span> <i class="fas fa-wallet"></i> </span> Balance <span></span> </p>
+                    </div>
+                    <div>
+                        <p> ₹ <span id = "walletBalanceDispM"> </span></p>
+                    </div>
+                    </div>
+                    <div id = "amountLessError">
+                        <div>
+                            <p id="amountLessErrorP">Available amount not enough</p>
+                        </div>
+                    </div>
+                    <div id = "bestPrice">
+                        <p> Orders will execute at best price or will get cancelled on the next trading day </p>
+                    </div>
+                    <div class = 'btnWrap'>
+                    <button onclick = "buyTata()" id = "buyBtn"> Buy </button>
+                    <button onclick="addMoney()" id="addBtn"> Add Money </button>
+                    </div>
+                </div>
+            </div>
+
+            <!------------------ placing order icon after buying !--------------------->
+            <div id="placingOrderIcon">
+                <i class="fas fa-circle-notch fa-spin" id="circleIcon"></i>
+                <i class="fas fa-spinner fa-pulse" id="circleIcon2"></i>
+            
+                <p> Placing Your Order...</p>
+            </div>
+
+            <!---------------------------Buy Successful page---------------->
+            <div id = "buySuccess">
+                <div class = "buySuccess1">
+                    <i class="fas fa-check-circle"></i>
+                    <p> Buy Successful </p>
+                </div>
+                <div class = "buySuccDiv">
+                    <div>
+                        <p> Shares </p>
+                        <p id = "ShareBought"> </p>
+                    </div>
+                    <div>
+                        <p> Price </p>
+                        <p> ₹3,983</p>
+                    </div>
+                    <div>
+                        <p> Type </p>
+                        <p> Delivery </p>
+                    </div>
+                </div>
+                <div class = "doneBtn">
+                    <a href="investment.html"> Investments </a>
+                    <button onclick=" done()"> Done </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id = 'last_box'>
+
+        <div>
+            <div id = 'contact'>
+                <div id = 'contact_grow_img'>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg">   
+
+                    
+
+                </div>
+                <div id = 'contact_address'>
+                    <p>No.11, 2nd floor, 80FT Road </p>
+                        <p>4th Block, S.T Bed</p> 
+                        <p>Kormangala, Bengaluru - 560034</p>  
+                        
+                        <p><u>Contact Us</u></p>
+
+
+                </div>
+                <div id = 'contact_socialMedia'>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/fb_icon_groww.1c94e937.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/twitter_icon_groww.4cb988f6.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/yt_icon_groww.ec96b677.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/instagram_icon_groww.0454c1a2.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/linkedin_icon_groww.b15f8240.svg" ></div>
+                    
+
+                </div>
+
+            </div>
+            <div class = 'last_box_info'>
+                <h1 class="last_box_head">GROWW</h1>
+                <p>About Us</p>
+                <p>AMC Mutual Funds</p>
+                <p>Pricing</p>
+                <p>Groww Q&A</p>
+                <p>Blog<p>
+                <p>Media & Press</p>
+                <p>Help and Support</p>
+
+
+
+            </div>
+            <div class = 'last_box_info'>
+
+                <h1 class="last_box_head">EXPLORE</h1>
+            <p>Mutual Funds</p>
+            <p>Stocks</p>
+            <p>NFO</p>
+            <p>IPO</p>
+            <p>US Stocks</p>
+            <p>Fixed Deposit</p>
+            <p>Gold</p>
+
+            </div>
+            
+
+                <div class = 'last_box_info'>
+                    <h1 class="last_box_head">RESOURCES</h1>
+                    <p>Mutual Fund Beginners</p>
+                    <p>Learn Stocks Market</p>
+                    <p>Calculators</p>
+                    <p>Glossary</p>
+                    <p>Open Demat Account</p>
+                    <p>Groww Digest</p>
+                    <p>Download Forms</p>
+                </div>
+
+            
+
+        </div>
+        <hr>
+
+    <div id = 'last_box_store'> 
+        <div>
+            <p>Ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India</p>
+
+        </div>
+
+        <div id= 'stores'>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/app-store-logo.060773ea.svg'>
+            </div>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/google-play-badge.0547a72f.svg'>
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+    
+
+   
+    
+
+  
+    
+
+<!-- /// -->
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+<script>
+
+    
+    
+var users = [
+{
+      name : 'Pilly Rakesh',
+      email: 'rakesh@gmail.com',
+    imgae: "images\\dp.JPG",
+    
+},
+{
+     name: 'Kishan Kumar',
+     email: 'kishan@gmail.com',
+     imgae: "images\\kishan.jpg",
+},
+
+{
+    name: 'Bharadwaj S',
+    email: 'bharadwaj@gmail.com',
+    imgae: 'images\\bharadwaj.jpg',
+}
+
+];
+
+
+let name = JSON.parse(localStorage.getItem('users'));
+for(let  i = 0; i<users.length; i++){
+
+    if(users[i].email == name[0].email){
+        document.getElementById('user_name').innerText = users[i].name;
+        document.getElementById('user_email').innerText = users[i].email;
+        let dp  = document.getElementById('user_image');
+            dp.setAttribute('src',users[i].imgae)
+
+        document.getElementById('users_dp').src = users[i].imgae;
+
+       
+    }
+}
+
+
+
+     
+    
+
+    let info = document.getElementById('nva_bar_icons_dp') //this is 
+        info.addEventListener('click',function(){
+            let div = document.getElementById('info');
+            
+
+            if(div.style.display == 'none'){
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+
+        });
+
+        let div_info = document.getElementById('info');
+        div_info.addEventListener('mouseleave',function(){
+            div_info.style.display = 'none';
+        })
+
+
+
+     
+
+
+function dark(){
+    
+   let dark = document.getElementById('dark_mode');
+    
+        document.body.classList.toggle('darkmode');
+
+        if(document.body.classList.contains('darkmode')){
+
+            let image =  document.getElementById('main_logo');
+                
+            image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg')
+            
+
+        } else{
+            let image =  document.getElementById('main_logo');
+                
+            image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
+        }
+
+        
+
+}
+
+
+let logout = document.getElementById('logout');
+    logout.addEventListener('click',function(){
+        window.location.href = 'index.html';
+    });
+
+
+
+    let explor = document.getElementById('nva_bar_explore');
+    explor.addEventListener('click',function(){
+        window.location.href = 'stocks.html';
+    })
+
+    let home = document.getElementById('nav_bar_logo');
+    home.addEventListener('click',function(){
+        window.location.href = 'stocks.html';
+    })
+
+
+
+    let wallet = document.getElementById('nva_bar_icons_wallet');
+    wallet.addEventListener('click',function(){
+        window.location.href = 'wallet.html';
+    })
+
+    let invest = document.getElementById('nva_bar_invest');
+        invest.addEventListener('click',function(){
+            window.location.href = 'investment.html';
+        })
+    
+    
+
+    let myChart = document.getElementById('myChart').getContext('2d');
+
+    let lineChart = new Chart(myChart, {
+        type:'line',
+        data:{
+            labels:[
+                '06-MAY',
+                '07-MAY',
+                '10-MAY',
+                '11-MAY',
+                '12-MAY',
+                '14-MAY',
+                '17-MAY',
+                '18-MAY',
+                '19-MAY',
+                '20-MAY',
+                '21-MAY',
+                '24-MAY',
+                '25-MAY',
+                '26-MAY',
+                '27-MAY',
+                '28-MAY',
+                '31-MAY',
+                '01-JUN',
+                '02-JUN',
+                '03-JUN',
+                '04-JUN',
+                '07-JUN',
+                '08-JUN',
+                '09-JUN',
+                '10-JUN'
+            ],
+
+            datasets:[{
+                label:"₹",
+                data:[
+                    3105.50,
+                    3133.00,
+                    3145.95,
+                    3125.00,
+                    3120.00,
+                    3098.50,
+                    3055.00,
+                    3100.00,
+                    3084.00,
+                    3067.10,
+                    3061.00,
+                    3081.50,
+                    3092.00,
+                    3120.00,
+                    3161.95,
+                    3189.50,
+                    3150.00,
+                    3168.60,
+                    3150.85,
+                    3154.55,
+                    3128.00,
+                    3145.00,
+                    3198.00,
+                    3202.00,
+                    3210.00
+                ],
+                fill: false,
+                borderColor: 'rgb(38, 215, 171)',
+                tension: 0.1
+            }],
+        },
+        
+        options: {
+            scales: {
+                xAxis:{
+                    display:false
+                },
+                yAxis: {
+                    display:false
+                }
+            },
+            interaction: {
+                intersect:false
+            },
+            plugins:{
+                legend:false,
+                tooltip:{
+                    bodyColor: '#fff',
+                }
+            }            
+        }
+        
+    });
+// -----------------------End of Charts-------------------------
+
+ let monis = localStorage.getItem('bal')
+ monis = JSON.parse(monis)
+ let walletBalance = monis[0].balance;
+
+ let displayP = document.getElementById('walletBalanceDispM')
+
+    let mehH = Number(monis[0].balance);
+    var rounde = Math.round((mehH + Number.EPSILON) * 100) / 100;
+
+     displayP.innerText = rounde;
+
+
+ // -----------------To compare to share price x N of shares with balance available----------------------------
+
+let shareInput = document.getElementById('share-value-inputBox'); // reference to the number of shares input box
+
+shareInput.addEventListener('input', compare )
+
+// references 
+
+
+    var numB = shareInput.value;
+
+
+function compare (){    // comparing the the total price with the available balance on the wallet.
+   var price = Number(document.getElementById('tataPrice').innerText);
+   var p1 = document.getElementById('bestPrice');
+   var p2 = document.getElementById('amountLessErrorP');
+
+   var inpBox = document.getElementById('share-value-inputBox')
+   let tempVAL = shareInput.value;
+   tempVAL = Number(tempVAL)
+  
+
+   let addBtn = document.getElementById('addBtn');
+   let buyBtn = document.getElementById('buyBtn');
+
+   let sharesInNumber = document.getElementById('ShareBought')
+   sharesInNumber.innerHTML = shareInput.value;
+
+   let value = (tempVAL * price);  // getting the total value.
+
+   if(value > walletBalance ){
+      p1.style.visibility = "hidden";    // swapping the p tag to alert when the balance is low.
+      p2.style.visibility = "visible";
+
+      buyBtn.style.visibility = "hidden"; // swapping the buy button with add money button when low balance.
+      addBtn.style.visibility = "visible";
+
+      inpBox.style.backgroundColor = "rgb(255,245,224)"; // swapping the background of the input box
+      inpBox.style.color = "rgb(255,182,28)";            //  - green to red;
+   }
+   else{
+       p1.style.visibility = "visible";  // swapping back to the initial when the balance is not low.
+       p2.style.visibility = "hidden";
+
+       inpBox.style.backgroundColor = "rgba(38, 215, 171, 0.24)";
+       inpBox.style.color = "rgb(38,215,171)";
+
+        buyBtn.style.visibility = "visible";
+       addBtn.style.visibility = "hidden";
+
+   }
+
+}
+//-------------------------end of compare function------------------------------------
+
+
+//-------------------------------- Add money button-------------------------------
+
+function addMoney() {
+    window.location.href = "wallet.html";
+}
+//------------------------Function to buy the stocks------------------------------------
+function buyTata(){
+
+    let buyDiv = document.getElementById('visible');  // reference of the initial div displayed ( buy/ N of shares input box).
+
+    let waitingDiv = document.getElementById('placingOrderIcon'); // referencer to the waiting icons.
+    
+    let buySucc = document.getElementById('buySuccess'); // reference to the "buy successful" div.
+    
+
+   if( shareInput.value != ""){             // making sure the input fields are not empty.
+
+        let num = Number(shareInput.value);                // getting the value from the input (N of shares).
+        let price = Number(document.getElementById('tataPrice').innerText);    // getting the price of the stock.
+        let value = (num * price);                                           // N * price to get the total value.
+      
+        
+
+
+    let bal = JSON.parse(localStorage.bal)           
+
+    if(bal[0].shares == null){                // updating the No. of shares purchased.
+        bal[0].shares = num;
+    }
+
+    else{
+        bal[0].shares = Number(bal[0].shares);
+        bal[0].shares += num;
+    }
+
+    bal[0].balance -= value;               // subtracting the value from the wallet.
+
+  bal[0].balance = (Math.round(bal[0].balance * 100) / 100).toFixed(2);    // fixing just 2 decimal points
+
+    if(bal[0].balance < 1){ bal[0].balance = 0 }
+
+
+
+    localStorage.setItem('bal', JSON.stringify(bal));   // stringifying the json file back.
+
+
+ 
+    buyDiv.innerText = null;                     // clearing the innerHTML of the initial div.
+    buyDiv.style.visibility = "hidden";
+
+    waitingDiv.style.visibility = "visible"        // making "placing order" page visible.
+
+    setTimeout(function () {                       // stopping the placing order page after 2 sec and-
+        waitingDiv.style.visibility = "hidden";    //            - displaying the "buy success" page.
+        buySucc.style.visibility = 'visible';
+    }, 2000)
+}
+
+}
+
+//--------------------------------------------End of Buying Function > Pheww!!!!!-------------
+
+
+// function to take back to the buying card once done.
+
+function done() {
+    let buyDiv = document.getElementById('visible');       // reference to the initial buying card.
+    let buySucc = document.getElementById('buySuccess');  // reference to the buy success card.
+
+    buySucc.style.visibility = "hidden";                // swapping the visibility of the both.
+    buyDiv.style.visibility = "visible";
+
+    location.reload();                               // reloading the page to get back the innerHTML.
+
+}
+// -----------------read more (about company section) ----------------
+
+function readMore(){
+    let moreTxt = document.getElementById('readMoreABC');
+    let readmore = document.getElementById('SpanGreen')
+
+
+
+    if(moreTxt.style.display === 'none'){
+        moreTxt.style.display = 'inline';
+         readmore.innerHTML = '....Read less'
+    }
+    else {
+        moreTxt.style.display = 'none';
+        readmore.innerHTML = '....Read more';
+    }
+}
+
+</script>

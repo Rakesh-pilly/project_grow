@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   
+    <script src="https://kit.fontawesome.com/0154fd9152.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stocks.css">
+    <title> stocks</title>
+</head>
+<body>
+    <div id="nav_bar">
+        <div id="nav_bar_logo">
+            <img id = 'main_logo' src="https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg" placeholder = "logo image">
+
+        </div>
+        <div id="nav_bar_options">
+            <div id="nva_bar_explore">
+                <p class="small_box_green">Explore</p>
+    
+            </div>
+            <div id="nva_bar_invest">
+                <P>investments</P>
+            </div>
+
+        </div>
+        
+        <div id="nva_bar_search">
+            <input type="text" id="nva_bar_search_input" placeholder="Search stocks and mutal Funds">
+            <div>
+                <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/search.494f6987.svg">
+            </div>
+
+        </div>
+        <div id="nva_bar_icons">
+            <div id="nva_bar_icons_bell">
+            <img src="images\alarm.png">
+            </div>
+            <div id="nva_bar_icons_wallet" >
+                <img src="images\wallet.png">
+
+            </div>
+            <div id="nva_bar_icons_">
+                <img src="images\shopping-cart-empty-side-view.png">
+
+
+            </div>
+            
+            
+
+        </div>
+        <div id="nva_bar_account">
+            <div id="nva_bar_icons_dp" >
+                <img id = 'user_image'src="images\dp.JPG">
+    
+                </div>
+                
+    
+            
+            <div id="info" >
+            
+
+        
+               <div id = 'use_info'>
+                   <div id = 'user_img'>
+                       <img src='images\dp.JPG' id="users_dp">
+                   </div>
+                   <div id = 'user_details'>
+                       <p id ='user_name'>Pilly Rakesh</p>
+                       <p id = 'user_email'>Rakesh.rock3823@gmail.com</p>
+                   </div>
+
+               </div>
+               <div id = 'info_list'>
+
+                <div id = 'bank'>
+                    <div id= 'bank_logo' class= 'info_img'>
+                     <img src = "images\museum.png">
+                    </div>
+                    <div>
+                        <p class="info_p">Bank & AutoPay</p>
+ 
+                    </div>
+ 
+                 </div>  
+                  <div id = 'infor_import'>
+                     <div id= 'import_logo' class= 'info_img'>
+                      <img src = "images\folder.png">
+                     </div>
+                     <div>
+                         <p class="info_p" >Import Funds</p>
+  
+                     </div>
+ 
+                 </div>
+                 <div id = 'info_watchlist'>
+                         <div id= 'watchlist_logo' class= 'info_img'>
+                          <img src = "images\bookmark.png">
+                         </div>
+                         <div>
+                             <p class="info_p">Watchlist</p> 
+      
+                         </div>
+                 </div>
+ 
+                  <div id = 'info_orders'>
+                             <div id= 'order_logo' class= 'info_img'>
+                              <img src = "images\page.png">
+                             </div>
+                             <div>
+                                 <p class="info_p"> Orders</p>
+          
+                             </div>
+                  </div>
+ 
+                 <div id = 'info_sips'>
+                                 <div id= 'sips_logo' class= 'info_img'>
+                                  <img src = "images\calendar.png">
+                                 </div>
+                                 <div>
+                                     <p class="info_p">SIPs </p>
+              
+                                 </div>
+                 </div>
+ 
+                 <div id = 'info_help'>
+                                     <div id= 'help_logo' class= 'info_img'>
+                                      <img src = "images\phone.png">
+                                     </div>
+                                     <div>
+                                         <p class="info_p">Help & Support </p>
+                  
+                                     </div>
+                 </div>
+                     <div id = 'info_settings'>
+                                         <div id= 'settings_logo' class= 'info_img'>
+                                          <img src = "images\settings.png">
+                                         </div>
+                                         <div>
+                                             <p class="info_p"> Settings</p>
+                      
+                                         </div>
+                      </div>
+                     <div id = 'dark_mode' onclick = 'dark()'>
+                                             <div  class= 'info_img'>
+                                              <img src = "images\night-mode.png">
+                                             </div>
+                                             <div>
+                                                 <p class="info_p"> Dark Mode</p>
+                          
+                                             </div>
+                     </div>
+                         <div id = 'logout'>
+                              <div  class= 'info_img'>
+                               <img src = "images\in.png">
+                              </div>
+                         <div >
+                              <p class="info_p"> Log Out</p>
+                              
+                             </div>
+                          </div>
+
+               </div>
+            
+
+              
+
+
+               </div>
+
+            </div>
+           
+
+        </div>
+       
+        
+        
+
+    <!-- </div> -->
+   <!-- this for the main options -->
+
+    <div id =  'main_options'>
+        <div id = 'stocks' onclick="stocks()">
+            <p class = 'color'>Stocks</p>
+            <div id = 'bars' class = 'bar'>
+
+            </div> 
+        </div>
+
+        <div id = 'MutaulFunds' onclick="MutaulFunds()">
+            <p id = 'mp'>Mutaul Funds</p>
+            <div id = 'barm' class = 'dbar'>
+
+            </div> 
+        </div>
+
+        <div id = 'fixed_deposits' onclick="fixed_deposits()">
+            <p id = 'fp'>Fixed Deposit</p>
+            <div id = 'barf' class = 'dbar'>
+
+            </div> 
+        </div>
+
+        <div id = 'Gold' onclick="Gold()">
+            <p id = 'gp'>Gold</p>
+            <div id = 'barg' class = 'dbar'>
+
+            </div> 
+        </div>
+
+
+        <div id = 'us' onclick="us()">
+            <p id = 'up'>US Stocks</p>
+            <div id = 'baru' class = 'dbar'>
+
+            </div> 
+        </div>
+     
+
+        
+    </div>
+    <hr>
+
+<!-- this code is for stocks div ----------- writeh-->
+    <div id = 'stock_div'>
+        <div id = 'stock_products'>
+            <div id = 'market_open'>
+                <p>MARKET OPENS AT 9:15 AM TOMORROW</p  >
+            </div>
+
+            <div class = 'stocks_tittle'>
+                <div>
+                    <p>Index</p>
+                </div>
+                
+                <div>
+                    <P>SCREENER</P>
+                </div>
+            </div>
+
+        <!-- THIS IS FOR THE THE INDEX GRPHAS -->
+
+            <div id="index_graphs">
+                
+               <div class="index_div">
+                   
+
+                    <div class = 'index_div_name'>
+                    <p class = 'index_main_p' >NIFTY</p>
+                    <p class = 'index_sub_p'>NSE</p>
+                </div>
+
+                <div class="graph_imag">
+                    <img src="images/graph.jpg">
+
+                </div>
+                <div>
+                    <p class = 'index_main_p'>15,869.25</p>
+                    <P class = 'index_precent_p'>57.40 (0.36%)</P>
+                </div>
+
+               </div>
+               <div class="index_div">
+                   
+
+                <div class = 'index_div_name'>
+                <p class = 'index_main_p' >SENSEX</p>
+                <p class = 'index_sub_p'>BSE</p>
+            </div>
+
+            <div class="graph_imag">
+                <img src="images/graph.jpg">
+
+            </div>
+            <div>
+                <p class = 'index_main_p'>52,773.05</p>
+                <P class = 'index_precent_p'>221.52 (0.42%)</P>
+            </div>
+
+           </div>
+              
+               
+
+            </div>
+
+            <!-- tittle for the stokcs in news   -->
+
+            <div class = 'stocks_tittle'>
+                <div>
+                    <p>Stocks in News</p>
+                </div>
+                
+                <div>
+                    <P>news</P>
+                </div>
+            </div>
+
+            <!-- stocs in news divss boxs  -->
+
+            <div class="stocks_small_boxs">
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE467B01029.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>TCS</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹3273.80</P>
+                        <p>12.10 (0.83%)</p>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE522F01014.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Coal India</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹157.15</P>
+                        <p class = 'small_box_red'>-2.20 (1.38%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE075A01022.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Wipro</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹557.90</P>
+                        <p class = 'small_box_red'>-3.70 (0.66%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE685A01028.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Regency Trust</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹1.51</P>
+                        <p class = 'small_box_red'>-0.02 (1.31%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+
+                
+
+                
+
+                
+
+
+               
+
+
+               
+                
+                
+            </div>
+
+            <!-- top Gainers  -->
+
+            <div class = 'stocks_tittle'>
+                <div>
+                    <p>Top Gainers</p>
+
+                    <p >NIFTY100</p>
+                </div>
+                
+                <div>
+                    <P>SEE MORE</P>
+                </div>
+            </div>
+
+
+            <!-- taop gainer samll boxes -->
+
+            <div class="stocks_small_boxs">
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE663F01024.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>info Edge</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹4,896.50</P>
+                        <p>212.20 (4.53%)</p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE271C01023.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>DLF</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹308.80</P>
+                        <p>9.60 (3.21%)</p>
+
+                    </div>
+                    
+
+                </div>
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE021A01026.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Asian Paints</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹3,042.2</P>
+                        <p>92.30 (3.13%)</p>
+
+                    </div>
+                    
+
+                </div>
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE192R01011.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Avenue Sipermarts</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹3,359.50</P>
+                        <p>85.40 (2.61%)</p>
+
+                    </div>
+                    
+
+                </div>
+                
+
+
+                </div>
+
+
+
+                <!-- this div is for tip losers div box  -->
+
+                <div class = 'stocks_tittle'>
+                    <div>
+                        <p>Top Losers</p>
+    
+                        <p >NIFTY100</p>
+                    </div>
+                    
+                    <div>
+                        <P>SEE MORE</P>
+                    </div>
+                </div>
+
+
+                <!-- this div is for top losser div small boxes -->
+
+
+             <div class="stocks_small_boxs">
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE931S01010.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Adani Transmisssion</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹1,446.40</P>
+                        <p class = 'small_box_red'>-76.10 (5.00%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE584A01023.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>NMDC</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹180.90</P>
+                        <p class = 'small_box_red'>-4.90 (2.64%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+                 <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE685A01028.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Torrent Pharma</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹2,927.65</P>
+                        <p class = 'small_box_red'>-52.10 (1.75%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+
+                <div class="small_box">
+                    <div class="small_box_round">
+                        <P>+</P>
+
+                    </div>
+                    <div class="small_box_image">
+                        <img src = "https://assets-netstorage.groww.in/stock-assets/logos/INE361B01024.png">
+                    </div>
+                    <div class="small_box_company_name">
+                        <P>Divis lab</P>
+
+                    </div>
+                    <div class="small_box_prices">
+                        <P>₹4,313.05</P>
+                        <p class = 'small_box_red'>-75.00 (1.71%)</p>
+
+                    </div>
+                    
+                    
+
+                </div>
+
+            </div>
+
+<!-- this div is for the top Sectors ----      -->
+            <div class = 'stocks_tittle'>
+                <div>
+                    <p>Top Sectors</p>
+
+                   
+                </div>
+                
+                <div>
+                    <P>SEE ALL</P>
+                </div>
+            </div>
+            <div id = 'top_sectors_div'>
+                <div class = 'top_sectors_boxes'>
+                    <p>Bankings</p>
+                    <p>|</p>
+                    <p>35</p>
+
+                </div>
+
+                <div class = 'top_sectors_boxes'>
+                    <p>Enery</p>
+                    <p>|</p>
+                    <p>84</p>
+
+                </div>
+                <div class = 'top_sectors_boxes'>
+                    <p>healthcare</p>
+                    <p>|</p>
+                    <p>180</p>
+
+                </div>
+
+
+                <div class = 'top_sectors_boxes'>
+                    <p>FMCG</p>
+                    <p>|</p>
+                    <p>182</p>
+
+                </div>
+                <div class = 'top_sectors_boxes'>
+                    <p>Automobile</p>
+                    <p>|</p>
+                    <p>118</p>
+
+                </div>
+
+                <div class = 'top_sectors_boxes'>
+                    <p>tele-Communicaton</p>
+                    <p>|</p>
+                    <p>46</p>
+
+                </div>
+
+                <div class = 'top_sectors_boxes'>
+                    <p>Media & Enterainment</p>
+                    <p>|</p>
+                    <p>87</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- this div is for the top by Market Cap --  -->
+            <div class = 'stocks_tittle'>
+                <div>
+                    <p>Top by Market Cap</p>
+
+                    <P> NIFTY100</P>
+
+                   
+                </div>
+                
+                <div>
+                    <P>SEE ALL</P>
+                </div>
+            </div>
+
+            <!-- this div is for the topmarket share div  -->
+            <div id = 'top_by_market_cap_div'>
+                <div class = 'top_box_title'>
+
+                    <div class = 'top_box_company'>
+                        <p  class="tittle_p">company</p>
+                    </div>
+
+                    <div class = 'top_box_image'>
+                        
+                    </div>
+
+                    <div class = 'top_box_price'>
+                        <p class="tittle_p">Market Price</p>
+
+                    </div>
+                    <div class = 'top_box_watchlist'>
+                       <p class="tittle_p">Watchlist</p>
+                      
+                        </div>
+
+                    </div>
+
+
+
+                    <div >
+
+                        <div class = 'top_box_company'>
+                            <a href="">Reliance Industries</a>
+                        </div>
+    
+                        <div class = 'top_box_image'>
+                            <img src = 'images/graph_red.png'>
+                            
+                        </div>
+    
+                        <div class = 'top_box_price'>
+                            <p>₹2,237.60</p>
+                            <p class= 'small_box_red'>-12.40 (0.55%)</p>
+    
+                        </div>
+                        <div class = 'top_box_watchlist'>
+                            <div class="round">
+                                <P>+</P>
+        
+                            </div>
+                          
+                            </div>
+    
+                        </div>
+
+
+                        <div >
+
+                            <div class = 'top_box_company'>
+                                <a href="">TCS</a>
+                            </div>
+        
+                            <div class = 'top_box_image'>
+                                <img src = 'images/graph.jpg'>
+                                
+                            </div>
+        
+                            <div class = 'top_box_price'>
+                                <p>₹3,254.20</p>
+                                <p class= 'small_box_green'>11.55 (0.55%)</p>
+        
+                            </div>
+                            <div class = 'top_box_watchlist'>
+                                <div class="round">
+                                    <P>+</P>
+            
+                                </div>
+                              
+                                </div>
+        
+                            </div>
+
+
+
+
+                            <div >
+
+                                <div class = 'top_box_company'>
+                                    <a href="">HDFC Bank</a>
+                                </div>
+            
+                                <div class = 'top_box_image'>
+                                    <img src = 'images/graph_red.png'>
+                                    
+                                </div>
+            
+                                <div class = 'top_box_price'>
+                                    <p>₹1,484.60</p>
+                                    <p class= 'small_box_red'>-5.65 (0.38%)</p>
+            
+                                </div>
+                                <div class = 'top_box_watchlist'>
+                                    <div class="round">
+                                        <P>+</P>
+                
+                                    </div>
+                                  
+                                    </div>
+            
+                                </div>
+
+
+
+
+
+                                <div >
+
+                                    <div class = 'top_box_company'>
+                                        <a href="">Hindustan Unilever</a>
+                                    </div>
+                
+                                    <div class = 'top_box_image'>
+                                        <img src = 'images/graph.jpg'>
+                                        
+                                    </div>
+                
+                                    <div class = 'top_box_price'>
+                                        <p>₹2,521.45</p>
+                                        <p class= 'small_box_green'>15.95 (0.67%)</p>
+                
+                                    </div>
+                                    <div class = 'top_box_watchlist'>
+                                        <div class="round">
+                                            <P>+</P>
+                    
+                                        </div>
+                                      
+                                        </div>
+                
+                                    </div>
+
+
+
+
+
+
+
+
+                                    <div >
+
+                                        <div class = 'top_box_company'>
+                                            <a href="">HDFC</a>
+                                        </div>
+                    
+                                        <div class = 'top_box_image'>
+                                            <img src = 'images/graph_red.png'>
+                                            
+                                        </div>
+                    
+                                        <div class = 'top_box_price'>
+                                            <p>₹2,521.45</p>
+                                            <p class= 'small_box_red'>-23.65 (0.93%)</p>
+                    
+                                        </div>
+                                        <div class = 'top_box_watchlist'>
+                                            <div class="round">
+                                                <P>+</P>
+                        
+                                            </div>
+                                          
+                                            </div>
+                    
+                                        </div>
+
+
+
+
+
+
+                                        <div >
+
+                                            <div class = 'top_box_company'>
+                                                <a href="">ICICI</a>
+                                            </div>
+                        
+                                            <div class = 'top_box_image'>
+                                                <img src = 'images/graph_red.png'>
+                                                
+                                            </div>
+                        
+                                            <div class = 'top_box_price'>
+                                                <p>₹640.10</p>
+                                                <p class= 'small_box_red'>-5.20 (0.81%)</p>
+                        
+                                            </div>
+                                            <div class = 'top_box_watchlist'>
+                                                <div class="round">
+                                                    <P>+</P>
+                            
+                                                </div>
+                                              
+                                                </div>
+                        
+                                            </div>
+
+
+
+
+
+
+                                            <div >
+
+                                                <div class = 'top_box_company'>
+                                                    <a href="">ITC</a>
+                                                </div>
+                            
+                                                <div class = 'top_box_image'>
+                                                    <img src = 'images/graph.jpg'>
+                                                    
+                                                </div>
+                            
+                                                <div class = 'top_box_price'>
+                                                    <p>₹207.85</p>
+                                                    <p class= 'small_box_red'>0.80 (0.39%)</p>
+                            
+                                                </div>
+                                                <div class = 'top_box_watchlist'>
+                                                    <div class="round">
+                                                        <P>+</P>
+                                
+                                                    </div>
+                                                  
+                                                    </div>
+                            
+                                                </div>
+
+
+
+
+
+
+
+                                                <div >
+
+                                                    <div class = 'top_box_company'>
+                                                        <a href="">kotak Mahindra Bank</a>
+                                                    </div>
+                                
+                                                    <div class = 'top_box_image'>
+                                                        <img src = 'images/graph_red.png'>
+                                                        
+                                                    </div>
+                                
+                                                    <div class = 'top_box_price'>
+                                                        <p>₹1,760.60</p>
+                                                        <p class= 'small_box_red'>-10.30 (0.58%)</p>
+                                
+                                                    </div>
+                                                    <div class = 'top_box_watchlist'>
+                                                        <div class="round">
+                                                            <P>+</P>
+                                    
+                                                        </div>
+                                                      
+                                                        </div>
+                                
+                                                    </div>
+
+
+
+
+
+
+                                                    <div >
+
+                                                        <div class = 'top_box_company'>
+                                                            <a href="">ifosys</a>
+                                                        </div>
+                                    
+                                                        <div class = 'top_box_image'>
+                                                            <img src = 'images/graph.jpg'>
+                                                            
+                                                        </div>
+                                    
+                                                        <div class = 'top_box_price'>
+                                                            <p>₹1,480.60</p>
+                                                            <p class= 'small_box_green'>6.70 (0.45%)</p>
+                                    
+                                                        </div>
+                                                        <div class = 'top_box_watchlist'>
+                                                            <div class="round">
+                                                                <P>+</P>
+                                        
+                                                            </div>
+                                                          
+                                                            </div>
+                                    
+                                                        </div>
+
+                                                        <div >
+
+                                                        <div class = 'top_box_company'>
+                                                            <a href="">SBI</a>
+                                                        </div>
+                                    
+                                                        <div class = 'top_box_image'>
+                                                            <img src = 'images/graph_red.png'>
+                                                            
+                                                        </div>
+                                    
+                                                        <div class = 'top_box_price'>
+                                                            <p>₹3,254.20</p>
+                                                            <p class= 'small_box_red'>-3.55 (0.83%)</p>
+                                    
+                                                        </div>
+                                                        <div class = 'top_box_watchlist'>
+                                                            <div class="round">
+                                                                <P>+</P>
+                                        
+                                                            </div>
+                                                          
+                                                            </div>
+                                    
+                                                        </div>
+
+
+                                                        <div class = row_number>
+                                                            <div >
+                                                                <p class= 'small_box_green'><</p>
+                                                                <p class= 'small_box_green'><u>1</u></p>
+                                                                <p>2</p>
+                                                                <p>...</p>
+                                                                <p>5</p>
+                                                                <p class= 'small_box_green'>></p>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+               
+
+
+            </div>
+    
+
+        
+        </div>
+        <div id = 'stock_list'>
+            <div class = 'right_box_lsit'>
+                <div class = list>
+                    <div class = 'list_image'>
+                        <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/fno_icon.2067f0e1.svg'>
+                        
+                    </div>
+                    <div class = 'lsit_info'>
+                        <h4>F&O - Futures & Options</h4>
+                    </div>
+
+                </div>
+
+
+                <div class = list>
+                    <div class = 'list_image'>
+                        <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/etf_icon.400ca2ff.svg'>
+                        
+                    </div>
+                    <div class = 'lsit_info'>
+                        <h4>ETF - Exchnage Traded Funds</h4>
+                    </div>
+
+                </div>
+
+
+                <div class = list>
+                    <div class = 'list_image'>
+                        <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/ipo_icon.45b3f2d8.svg'>
+                        
+                    </div>
+                    <div class = 'lsit_info'>
+                        <h4>IPO - Intial Public Offerings</h4>
+                        <div>
+                            <div>
+                                <div class = 'dotg'>
+
+                                </div>
+                                <p>4 Open</p>
+
+                            </div>
+                            <div>
+                                <div class = 'dotr'></div>
+                                <p>7 Upcoming</p>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class = list>
+                    <div class = 'list_image'>
+                        <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/sgb_icon.18c76fd7.svg'>
+                        
+                    </div>
+                    <div class = 'lsit_info'>
+                        <h4>SGB - Sovereign Gold Bond</h4>
+                        <div>
+                            <div>
+                                <div class = 'dotg'>
+
+                                </div>
+                                <p>0 Open</p>
+
+                            </div>
+                            <div>
+                                <div class = 'dotr'></div>
+                                <p>3 Upcoming</p>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id = 'stock_setup' >
+                <div class = 'stock_setup_img'>
+                    <img src = 'https://assets-netstorage.groww.in/mf-assets/logos/Group-1384.svg'></img>
+                </div>
+                <div id = 'setup_attention'>
+                    <p>Attention required!</p>
+                </div>
+    
+                <div id = 'setup_p'>
+                    <p>complete setting up your acount to start investing on Groww</p>
+                </div>
+                <div id = 'setup_button' >
+                    <p> COMPLETE SETUP </p>
+                </div>
+        
+        </div>
+       
+
+
+
+
+
+
+        </div>
+        
+
+    </div>
+    <div id = 'last_box'>
+
+        <div>
+            <div id = 'contact'>
+                <div id = 'contact_grow_img'>
+                    <img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg">   
+
+                    
+
+                </div>
+                <div id = 'contact_address'>
+                    <p>No.11, 2nd floor, 80FT Road </p>
+                        <p>4th Block, S.T Bed</p> 
+                        <p>Kormangala, Bengaluru - 560034</p>  
+                        
+                        <p><u>Contact Us</u></p>
+
+
+                </div>
+                <div id = 'contact_socialMedia'>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/fb_icon_groww.1c94e937.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/twitter_icon_groww.4cb988f6.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/yt_icon_groww.ec96b677.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/instagram_icon_groww.0454c1a2.svg" ></div>
+                    <div><img src="https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/linkedin_icon_groww.b15f8240.svg" ></div>
+                    
+
+                </div>
+
+            </div>
+            <div class = 'last_box_info'>
+                <h1 class="last_box_head">GROWW</h1>
+                <p>About Us</p>
+                <p>AMC Mutual Funds</p>
+                <p>Pricing</p>
+                <p>Groww Q&A</p>
+                <p>Blog<p>
+                <p>Media & Press</p>
+                <p>Help and Support</p>
+
+
+
+            </div>
+            <div class = 'last_box_info'>
+
+                <h1 class="last_box_head">EXPLORE</h1>
+            <p>Mutual Funds</p>
+            <p>Stocks</p>
+            <p>NFO</p>
+            <p>IPO</p>
+            <p>US Stocks</p>
+            <p>Fixed Deposit</p>
+            <p>Gold</p>
+
+            </div>
+            
+
+                <div class = 'last_box_info'>
+                    <h1 class="last_box_head">RESOURCES</h1>
+                    <p>Mutual Fund Beginners</p>
+                    <p>Learn Stocks Market</p>
+                    <p>Calculators</p>
+                    <p>Glossary</p>
+                    <p>Open Demat Account</p>
+                    <p>Groww Digest</p>
+                    <p>Download Forms</p>
+                </div>
+
+            
+
+        </div>
+        <hr>
+
+    <div id = 'last_box_store'> 
+        <div>
+            <p>Ⓒ 2016-2021 Groww. All rights reserved, Built with ❤️ in India</p>
+
+        </div>
+
+        <div id= 'stores'>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/app-store-logo.060773ea.svg'>
+            </div>
+            <div>
+                <img src = 'https://assets-netstorage.groww.in/website-assets/prod/1.6.8/build/client/images/google-play-badge.0547a72f.svg'>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+   
+
+
+
+</body>
+</html>
+
+    <script>
+
+        // for open of wallet 
+
+        let wallet = document.getElementById('nva_bar_icons_wallet');
+        wallet.addEventListener('click',function(){
+            window.location.href = 'wallet.html';
+        })
+        
+
+        let invest = document.getElementById('nva_bar_invest');
+        invest.addEventListener('click',function(){
+            window.location.href = 'investment.html';
+        })
+
+        let home = document.getElementById('nav_bar_logo');
+    home.addEventListener('click',function(){
+        window.location.href = 'stocks.html';
+    })
+
+
+        
+
+        let tcs = document.querySelector('.small_box');
+        tcs.addEventListener('click',function(){
+            window.location.href = 'innerStocks.html';
+        })
+        
+
+        
+
+
+
+// const popup = document.querySelector('.popup');
+//   function showPopup() {
+//     popup.classList.add('open');
+//   }
+//   function hidePopup() {
+//     popup.classList.remove('open');
+//   }
+
+        function MutaulFunds(){
+            window.location.href = 'dashboras.html';
+            // alert('yes')
+
+        }
+
+
+var users = [
+{
+      name : 'Pilly Rakesh',
+      email: 'rakesh@gmail.com',
+    imgae: "images\\dp.JPG",
+    
+},
+{
+     name: 'Kishan Kumar',
+     email: 'kishan@gmail.com',
+     imgae: "images\\kishan.jpg",
+},
+
+{
+    name: 'Bharadwaj S',
+    email: 'bharadwaj@gmail.com',
+    imgae: 'images\\bharadwaj.jpg',
+}
+
+];
+
+
+let name = JSON.parse(localStorage.getItem('users'));
+for(let  i = 0; i<users.length; i++){
+
+    if(users[i].email == name[0].email){
+        document.getElementById('user_name').innerText = users[i].name;
+        document.getElementById('user_email').innerText = users[i].email;
+        let dp  = document.getElementById('user_image');
+            dp.setAttribute('src',users[i].imgae)
+
+        document.getElementById('users_dp').src = users[i].imgae;
+
+       
+    }
+}
+
+
+
+     
+    
+
+    let info = document.getElementById('nva_bar_icons_dp') //this is 
+        info.addEventListener('click',function(){
+            let div = document.getElementById('info');
+            
+
+            if(div.style.display == 'none'){
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+
+        });
+
+        let div_info = document.getElementById('info');
+        div_info.addEventListener('mouseleave',function(){
+            div_info.style.display = 'none';
+        })
+
+
+
+     
+
+
+function dark(){
+    
+   let dark = document.getElementById('dark_mode');
+    
+        document.body.classList.toggle('darkmode');
+
+        if(document.body.classList.contains('darkmode')){
+
+            let image =  document.getElementById('main_logo');
+                
+            image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg')
+            
+
+        } else{
+            let image =  document.getElementById('main_logo');
+                
+            image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
+        }
+
+        
+
+}
+
+
+let logout = document.getElementById('logout');
+    logout.addEventListener('click',function(){
+        window.location.href = 'index.html';
+    });
+</script>
