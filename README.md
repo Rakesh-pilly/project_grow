@@ -1,5 +1,5 @@
 # project_grow
 
 Libraries used:
-1) Particles.js -> ( particles effects on the landing page);
-2) Charts.js -> ( interactive graph );
+1) Particles.js -> ( particle effects on the landing page);
+2) Charts.js -> ( for interactive graph );
