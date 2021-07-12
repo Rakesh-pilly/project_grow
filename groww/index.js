@@ -25,10 +25,7 @@
             
         var flex = document.querySelectorAll('flex_');
             flex.style
-        // for(let i = 0; i<flex.length ; i++){
-        //     console.log(flex[i]);
-        // }
-
+    
             
            var img = document.getElementById('product_imgae');
             img.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.4/build/client/images/stocks.74948e96.png');
@@ -130,8 +127,7 @@
 
 
     
-    //this will control who log in box works 
-        
+
     let box = document.getElementById('btn');
         box.addEventListener('click',Login_box);
 
@@ -139,9 +135,7 @@
         function Login_box(){
             let disp = document.getElementById('login_box');
              disp.style.display = 'flex';
-            //  disp.setAttribute('class', 'unblur')
-        //    document.body.setAttribute('class', 'blur');
-            
+         
             
              
            
@@ -150,10 +144,7 @@
         }
 
 
-    // function blur_boby(){
-    //        document.body.setAttribute('class', 'blur');
-
-    // }
+  
 
     let log_box = document.getElementById('login_btn');
     log_box.addEventListener('click',function(){
@@ -222,10 +213,11 @@
                 
 
                 if(pass != ""){
+                    window.location.href="./stocks.html";
 
                  
                     for(let i = 0; i<users.length; i++){
-                    if(user_email == users[i].email && pass == users[i].password){
+                    
                         let user = {
                         email : user_email,
                         password : pass,
@@ -238,11 +230,11 @@
                     users.push(user);
                     localStorage.setItem('users',JSON.stringify(users));
 
-                     window.location.href="./stocks.html";
+                   
                      
                 
                         
-                    } 
+                    
                 }
 
 

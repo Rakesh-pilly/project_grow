@@ -1,6 +1,6 @@
 
 
-    /* this code is wirtten by rakesh -- -code started  */
+
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         *{
             font-family: 'Roboto', sans-serif; 
@@ -10,7 +10,6 @@
         }
 
 
-        /* nav bar code strats   */
         :root{
     --lightBackground : #fff;
     --lightColor : #44475b;
@@ -60,7 +59,8 @@ display:flex;
 height: 29px;
 padding: 3px;
 border-radius: 5px;
-box-shadow: 1px 1px 1px 1px var(--border);
+margin-right: 15px;
+
 
 
 
@@ -73,6 +73,7 @@ color: var(--lightColor);
 font-size: 16PX;
 background-color: var(--lightBackground);
 outline: var(--lightBackground);
+
 
 
 
@@ -113,8 +114,8 @@ cursor: pointer;
 
 #login_box{
 
-    width: 800px;
-    height: 450px;
+    width: 900px;
+    height: 500px;
  
  
     position: fixed;
@@ -126,22 +127,24 @@ cursor: pointer;
      display:none;
     z-index:1;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px rgba(205, 205, 205, 0.5);
+   
     transition: all 2s ease-out;
+   
    
 
     
 
 }
+
 #log_box_left{
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 500px;
     background-image: url('https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/patternImg.0edf5760.svg')
 
 }
 #log_box_right{
-    width: 270px;
-    height: 390px;
+    width: 340px;
+    height: 440px;
     background-color: #ffff;
     padding: 30px 60px;
   
@@ -153,6 +156,16 @@ cursor: pointer;
     position: absolute;
     right:0px;
 background-color: #fff;
+
+
+
+}
+#login_btn:hover{
+    cursor: pointer;
+}
+#login_btn p{
+    margin: 0px;
+    font-size:25px;
 }
 #log_box_left> div{
     margin-left: 60px;
@@ -182,8 +195,14 @@ background-color: #fff;
 #log_box_google{
     display: flex;
     justify-content:center;
-    box-shadow: 1px 1px 1px 1px rgba(205, 205, 205, 0.3);
-    
+    box-shadow:
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034),
+0 10px 10px rgba(0, 0, 0, 0.034)
+;
 
 }
 #log_box_google img{
@@ -284,7 +303,7 @@ background-color: #fff;
 
 
 
-         /* this code for top nav bar writen by rakesh  end*/
+      
 
 
          #our_products_cont{
@@ -326,8 +345,7 @@ background-color: #fff;
         #our_products_tabs>div{
             align-items: center;
             min-width: 150px;
-            /* margin-left: 30px; */
-            
+         
             
         }
        
@@ -338,10 +356,7 @@ background-color: #fff;
 
          
         }
-        /* #flex_1{
-            justify-content: start !important
-        } */
-
+      
         
         .our_products_flex:hover{
             filter: grayscale(0%);
@@ -363,8 +378,7 @@ background-color: #fff;
         .our_product_tabs_img{
             width: 40px;
             height: 40px;
-            /* background-color: black; */
-            /* border-radius: 20px; */
+           
         }
         .our_product_tabs_img>img{
             width: 100%;
@@ -389,12 +403,7 @@ background-color: #fff;
             font-weight: 500;
         
         }
-        /* #our_products_tabs .bar{
-           
-            width: 100%;
-            height: 5px;
-
-        } */
+   
         #our_product_display {
             display: flex;
             width: 100%;
@@ -450,7 +459,7 @@ background-color: #fff;
             
         }
 
-/* this code is wiriten by rakesh -- keep learning. keep growing --- code start */
+
         #keep_learning_cont{
             width: 90vw;
             margin: 0px auto;
@@ -514,9 +523,7 @@ background-color: #fff;
             text-decoration: underline;
         }
 
-/* this code is coded by rakesh --- keep learnign --- code ended */
 
-/* this code is coded by rakesh ---- in the press --- code start */
 
     #in_the_press{
         margin-bottom: 30px;
@@ -542,7 +549,7 @@ background-color: #fff;
             padding:0 10px; 
         }
         #in_the_press_img{
-            /* background-color: lightblue; */
+        
             width: 80vw;
             margin: 0 auto;
             display: grid;
@@ -562,7 +569,7 @@ background-color: #fff;
             filter: grayscale(0%);
         }
         
-        /* for particles js */
+    
 
         #particle-cont{
       width:100%;
@@ -608,7 +615,7 @@ background-color: #fff;
     }
 
 
-/* this code is for testimonial box */
+
 #testimonials_box{
     
     padding-top: 80px;
@@ -738,7 +745,7 @@ background-color: #fff;
 
 
 
-/* ------------- Card transition xy---------- */
+
 
 
 .cardTransCont {
@@ -808,7 +815,7 @@ line-height: 4rem;
 
 
 
-/* this code is writhn by kishan  */
+
 
 .Box{
                 background-color:#00d09c;
@@ -850,20 +857,7 @@ line-height: 4rem;
                 margin-top:3.29%;  
                 margin-right: 9%;
             }
-            /* .box-2{
-                background-color: #090c41d3;
-                width: 98.3vw;
-                height: 30vw;
-                margin-top: 7%;
-                margin-bottom: 7%;
-            }
-            .m1{
-                width: 40%;
-                /* margin-right: 75vw; */
-                /* float:left; */
-                /* margin-left: 25%; */
-            /* }*/ 
-
+        
 
     
 

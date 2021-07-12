@@ -1,45 +1,13 @@
    function stocks(){
         window.location.href = 'stocks.html';
-            1
+            
     }
 
 
-var users = [
-{
-      name : 'Pilly Rakesh',
-      email: 'rakesh@gmail.com',
-    imgae: "images\\dp.JPG",
-    
-},
-{
-     name: 'Kishan Kumar',
-     email: 'kishan@gmail.com',
-     imgae: "images\\kishan.jpg",
-},
-
-{
-    name: 'Bharadwaj S',
-    email: 'bharadwaj@gmail.com',
-    imgae: 'images\\bharadwaj.jpg',
-}
-
-];
 
 
 let name = JSON.parse(localStorage.getItem('users'));
-for(let  i = 0; i<users.length; i++){
 
-    if(users[i].email == name[0].email){
-        document.getElementById('user_name').innerText = users[i].name;
-        document.getElementById('user_email').innerText = users[i].email;
-        let dp  = document.getElementById('user_image');
-            dp.setAttribute('src',users[i].imgae)
-
-        document.getElementById('users_dp').src = users[i].imgae;
-
-       
-    }
-}
 
 
 
@@ -109,7 +77,7 @@ let logout = document.getElementById('logout');
     logout.addEventListener('click',function(){
         window.location.href = 'index.html';
     });
-//thiss code for from bharajwaj
+
 
 var nutshell = document.querySelector('.m-f-nutshell');
 
