@@ -8,7 +8,7 @@
 
 let name = JSON.parse(localStorage.getItem('users'));
 
-
+document.getElementById('user_email').innerText = name[0].email;
 
 
     
@@ -49,13 +49,20 @@ let name = JSON.parse(localStorage.getItem('users'));
 
 
 
-function dark(){
+
+    function dark(){
+
+  
     
-   let dark = document.getElementById('dark_mode');
+    
+        let dark = document.getElementById('dark_mode');
     
         document.body.classList.toggle('darkmode');
 
         if(document.body.classList.contains('darkmode')){
+            let darkTheme = true
+            localStorage.setItem('dark', JSON.stringify(darkTheme));
+
 
             let image =  document.getElementById('main_logo');
                 
@@ -63,14 +70,44 @@ function dark(){
             
 
         } else{
+            let darkTheme = false;
+            localStorage.setItem('dark', JSON.stringify(darkTheme));
+
             let image =  document.getElementById('main_logo');
                 
             image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
         }
 
+
+    
+
+  
         
 
 }
+let darkTheme = localStorage.getItem('dark');
+console.log(darkTheme)
+    
+if(darkTheme == 'true'){
+    let dark = document.getElementById('dark_mode');
+
+    document.body.classList.toggle('darkmode');
+
+    if(document.body.classList.contains('darkmode')){
+
+        let image =  document.getElementById('main_logo');
+            
+        image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg')
+        
+
+    } else{
+        let image =  document.getElementById('main_logo');
+            
+        image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
+    }
+
+
+} 
 
 
 let logout = document.getElementById('logout');

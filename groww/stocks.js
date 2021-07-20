@@ -29,17 +29,9 @@
 
 
 
-// const popup = document.querySelector('.popup');
-//   function showPopup() {
-//     popup.classList.add('open');
-//   }
-//   function hidePopup() {
-//     popup.classList.remove('open');
-//   }
-
         function MutaulFunds(){
             window.location.href = 'dashboras.html';
-            // alert('yes')
+          
 
         }
 
@@ -67,26 +59,27 @@ var users = [
 
 
 let name = JSON.parse(localStorage.getItem('users'));
-for(let  i = 0; i<users.length; i++){
 
-    if(users[i].email == name[0].email){
-        document.getElementById('user_name').innerText = users[i].name;
-        document.getElementById('user_email').innerText = users[i].email;
-        let dp  = document.getElementById('user_image');
-            dp.setAttribute('src',users[i].imgae)
 
-        document.getElementById('users_dp').src = users[i].imgae;
+
+
+   
+       
+        document.getElementById('user_email').innerText = name[0].email;
+        // let dp  = document.getElementById('user_image');
+            // dp.setAttribute('src',users[i].imgae)
+
+        // document.getElementById('users_dp').src = users[i].imgae;
 
        
-    }
-}
+    
 
 
 
      
     
 
-    let info = document.getElementById('nva_bar_icons_dp') //this is 
+    let info = document.getElementById('nva_bar_icons_dp')
         info.addEventListener('click',function(){
             let div = document.getElementById('info');
             
@@ -110,12 +103,18 @@ for(let  i = 0; i<users.length; i++){
 
 
 function dark(){
+
+  
     
-   let dark = document.getElementById('dark_mode');
+    
+        let dark = document.getElementById('dark_mode');
     
         document.body.classList.toggle('darkmode');
 
         if(document.body.classList.contains('darkmode')){
+            let darkTheme = true
+            localStorage.setItem('dark', JSON.stringify(darkTheme));
+
 
             let image =  document.getElementById('main_logo');
                 
@@ -123,14 +122,44 @@ function dark(){
             
 
         } else{
+            let darkTheme = false;
+            localStorage.setItem('dark', JSON.stringify(darkTheme));
+
             let image =  document.getElementById('main_logo');
                 
             image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
         }
 
+
+    
+
+  
         
 
 }
+let darkTheme = localStorage.getItem('dark');
+console.log(darkTheme)
+    
+if(darkTheme == 'true'){
+    let dark = document.getElementById('dark_mode');
+
+    document.body.classList.toggle('darkmode');
+
+    if(document.body.classList.contains('darkmode')){
+
+        let image =  document.getElementById('main_logo');
+            
+        image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.6/build/client/images/logo-light-groww.1815ad63.svg')
+        
+
+    } else{
+        let image =  document.getElementById('main_logo');
+            
+        image.setAttribute('src', 'https://assets-netstorage.groww.in/website-assets/prod/1.6.5/build/client/images/logo-dark-groww.83f43714.svg');
+    }
+
+
+} 
 
 
 let logout = document.getElementById('logout');

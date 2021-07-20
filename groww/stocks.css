@@ -199,6 +199,7 @@ hr{
 margin-top: -20px;
 color: (var(--lightColor));
 opacity: 0.3;
+z-index: 0;
 }
 
 #info{
@@ -212,6 +213,7 @@ opacity: 0.3;
     padding : 10px 20px;
     display:none;
     border-radius: 10px;
+    z-index: 1000;
    
 
 }
