@@ -411,6 +411,7 @@ z-index: 0;
 
 #mf-below-icons {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: -20px;
     font-size: 0.7rem;
     text-align: center;
 }
@@ -442,7 +443,7 @@ z-index: 0;
     background-color: var(--card-bg);
     width: 100%;
     margin-top: -150px;
-    margin-left: 15px;
+    margin-left: 0px;
     font-size: 0.8rem;
     text-align: center;
     justify-content: center;
