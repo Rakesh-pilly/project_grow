@@ -192,21 +192,7 @@
          
 
             sumbit.addEventListener('click',function(){
-                  var users = [
-            {
-                email: 'rakesh@gmail.com',
-                password: '123'
-            },
-            {
-                email: 'bharadwaj@gmail.com',
-                password: '123'
-            },
-            {
-                email : 'kishan@gmail.com',
-                password: '123'
-            }
-         ];
-
+                 
                 var user_email = document.getElementById('user_email').value;
                 let pass = document.getElementById('user_password').value;
 
@@ -216,12 +202,12 @@
                     window.location.href="./stocks.html";
 
                  
-                    for(let i = 0; i<users.length; i++){
+                    
                     
                         let user = {
                         email : user_email,
                         password : pass,
-                    }
+                        }
 
                     let users = [];
                    
@@ -230,22 +216,8 @@
                     users.push(user);
                     localStorage.setItem('users',JSON.stringify(users));
 
-                   
-                     
-                
-                        
                     
-                }
-
-
-
-
-               
-
-               
-                    
-
-                } else {
+                }else {
                     alert('Enter password')
                 }
 
