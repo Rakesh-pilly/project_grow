@@ -11,6 +11,9 @@ Groww is an online investment platform that allows investors to invest in mutual
 Download the project.
 [Download Here](https://github.com/Rakesh-pilly/project_grow/archive/refs/heads/master.zip)
 
+view the project app.
+[click here](https://groww-clone.netlify.app/)
+
 
 Clone the project from Command prompt or Bash.
 
